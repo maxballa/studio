@@ -42,7 +42,8 @@
     grafico: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>',
     fulmine: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"></path>',
     freccia: '<path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path>',
-    scarica: '<path d="M12 4v11"></path><path d="M7 10l5 5 5-5"></path><path d="M5 20h14"></path>'
+    scarica: '<path d="M12 4v11"></path><path d="M7 10l5 5 5-5"></path><path d="M5 20h14"></path>',
+    zaino: '<path d="M6 9a6 6 0 0 1 12 0v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"></path><path d="M9 6V4a3 3 0 0 1 6 0v2"></path><path d="M6 14h12"></path><path d="M10 14v2h4v-2"></path>'
   };
   function ico(nome, size, colore, spessore) {
     return '<svg width="' + (size || 22) + '" height="' + (size || 22) + '" viewBox="0 0 24 24" fill="none" stroke="' + (colore || 'currentColor') + '" stroke-width="' + (spessore || 2.4) + '" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONE[nome] + '</svg>';
@@ -256,6 +257,15 @@
     return (S.dati.orario.verifiche || []).filter(function (v) { var g = giorniTra(t, v.data); return g >= 0 && g <= giorni; })
       .sort(function (a, b) { return a.data.localeCompare(b.data); });
   }
+  function prossimoGiornoScuola() {
+    var d = oggi();
+    do { d = piuGiorni(d, 1); } while (daStr(d).getDay() === 0 || daStr(d).getDay() === 6);
+    return d;
+  }
+  function notePer(data) {
+    return (S.dati.orario.note || []).filter(function (n) { return n.data === data; })
+      .sort(function (a, b) { return (a.ora || 0) - (b.ora || 0); });
+  }
   function quando(data) {
     var g = giorniTra(oggi(), data);
     return g === 0 ? 'oggi' : g === 1 ? 'domani' : 'tra ' + g + ' giorni';
@@ -314,11 +324,18 @@
         }).join('') + '</div>'
       : '';
 
+    var giornoZaino = prossimoGiornoScuola();
+    var daPortare = notePer(giornoZaino);
+    var zaino = daPortare.length
+      ? '<div class="card verde" style="gap:10px"><div class="row">' + ico('zaino', 26, '#0B5A54') + '<h3 class="subtitle" style="font-weight:700">' + (giorniTra(oggi(), giornoZaino) === 1 ? 'Domani' : esc(fmtData(giornoZaino).split(' ')[0])) + ' porta</h3></div>' +
+        daPortare.map(function (n) { return '<p style="font-size:18px;line-height:1.35"><b>' + esc(n.materia) + ':</b> ' + esc(n.testo) + '</p>'; }).join('') + '</div>'
+      : '';
+
     var nav = '<div class="row wrap no-print" style="justify-content:flex-end">' +
       '<button class="link" data-a="settimana">' + ico('calendario', 20) + ' La mia settimana</button>' +
       '<button class="link trasparente" data-a="registro">' + ico('grafico', 20) + ' Per papà</button></div>';
 
-    return '<div class="screen">' + head + '<div class="grid-3">' + sinistra + '<div class="col" style="gap:22px">' + rip + arrivo + daRip + '</div></div>' + nav + '</div>';
+    return '<div class="screen">' + head + '<div class="grid-3">' + sinistra + '<div class="col" style="gap:22px">' + rip + zaino + arrivo + daRip + '</div></div>' + nav + '</div>';
   };
 
   VISTE.anteprima = function () {
@@ -493,13 +510,20 @@
     var O = S.dati.orario, ore = O.ore || [];
     var verPer = {};
     (O.verifiche || []).forEach(function (v) { verPer[v.data + '|' + v.ora] = v; });
+    var notaPer = {};
+    (O.note || []).forEach(function (n) { notaPer[n.data + '|' + n.ora] = n; });
+    var noteSett = (O.note || []).filter(function (n) { return n.data >= date[0] && n.data <= date[4]; }).sort(function (a, b) { return a.data.localeCompare(b.data) || (a.ora || 0) - (b.ora || 0); });
+    var portare = noteSett.length ? '<div class="card verde" style="gap:10px;padding:22px"><h2 class="subtitle" style="font-weight:700">Da portare</h2>' + noteSett.map(function (n) {
+      return '<div class="evento"><span class="muted small">' + esc(fmtData(n.data)) + '</span><b>' + esc(n.materia) + '</b><span class="small">' + esc(n.testo) + '</span></div>';
+    }).join('') + '</div>' : '';
     var html = '<div class="orario"><span></span>' + date.map(function (d) { return '<span class="giorno' + (d === oggi() ? ' oggi' : '') + '">' + fmtBreve(d) + '</span>'; }).join('');
     ore.forEach(function (ora, h) {
       html += '<span class="ora">' + esc(ora) + '</span>';
       CHIAVI_GIORNI.forEach(function (g, k) {
         var mat = (O.giorni[g] || [])[h] || '';
         var v = verPer[date[k] + '|' + (h + 1)];
-        html += '<div class="cella ' + classeMateria(mat) + (v ? ' verifica' : '') + '">' + esc(mat) + (v ? '<span class="tag">' + esc(v.tipo) + '</span>' : '') + '</div>';
+        var n = notaPer[date[k] + '|' + (h + 1)];
+        html += '<div class="cella ' + classeMateria(mat) + (v ? ' verifica' : '') + '">' + esc(mat) + (v ? '<span class="tag">' + esc(v.tipo) + '</span>' : '') + (n ? '<span class="tag portare">Da portare</span>' : '') + '</div>';
       });
     });
     html += '</div>';
@@ -513,7 +537,7 @@
       '<h1 class="title" style="margin-top:8px">' + daStr(date[0]).getDate() + '-' + daStr(date[4]).getDate() + ' ' + MESI[daStr(date[4]).getMonth()] + '</h1></div>' +
       '<div class="tabs"><button data-a="sett" data-v="0" aria-pressed="' + (off === 0) + '">Questa</button><button data-a="sett" data-v="1" aria-pressed="' + (off === 1) + '">Prossima</button></div></div>' +
       '<div class="grid-3" style="grid-template-columns:3fr 1fr"><div class="card scorri" style="padding:20px 22px">' + html + '</div>' +
-      '<div class="col" style="gap:18px"><div class="card giallo" style="gap:12px;padding:22px"><h2 class="subtitle" style="font-weight:700">In arrivo</h2>' + arrivo + '</div>' + consiglio +
+      '<div class="col" style="gap:18px"><div class="card giallo" style="gap:12px;padding:22px"><h2 class="subtitle" style="font-weight:700">In arrivo</h2>' + arrivo + '</div>' + portare + consiglio +
       '<p class="muted small" style="margin-top:auto">Orario e verifiche aggiornati da papà</p></div></div></div>';
   };
 

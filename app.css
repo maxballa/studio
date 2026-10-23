@@ -167,6 +167,7 @@ p { margin: 0; }
 .cella.geografia { background: var(--geo-chiaro); color: var(--geo-testo); font-weight: 600; }
 .cella.verifica { border: 3px solid var(--giallo); }
 .cella .tag { align-self: flex-start; font-family: var(--testo); font-size: 12px; font-weight: 700; background: var(--giallo); color: var(--ink); padding: 2px 8px; border-radius: 999px; }
+.cella .tag.portare { background: var(--geo-chiaro); color: var(--geo-testo); }
 .evento { background: #fff; border-radius: 18px; padding: 12px 14px; display: flex; flex-direction: column; gap: 3px; }
 .evento b { font-family: var(--titoli); font-weight: 600; font-size: 19px; }
 .tabs { display: flex; gap: 6px; background: #fff; padding: 6px; border-radius: 999px; box-shadow: 0 4px 0 var(--shadow); }
