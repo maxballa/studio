@@ -2,7 +2,7 @@
 // senza internet si apre l'ultima versione scaricata.
 var CACHE = 'studio-v1';
 var BASE = ['./', 'index.html', 'app.css', 'app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-180.png',
-  'data/sessioni.json', 'data/orario.json', 'data/config.json'];
+  'data/sessioni.json', 'data/orario.json', 'data/config.json', 'data/compiti.json'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(BASE); }).then(function () { return self.skipWaiting(); }));

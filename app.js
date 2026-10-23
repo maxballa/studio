@@ -50,7 +50,7 @@
   }
 
   // ---------- memoria sul tablet ----------
-  var store = { v: 1, sess: {}, coda: [], ripLog: [], ripFatto: '', suono: true };
+  var store = { v: 1, sess: {}, coda: [], ripLog: [], ripFatto: '', suono: true, fatti: {} };
   try {
     var salvato = JSON.parse(localStorage.getItem(CHIAVE) || 'null');
     if (salvato && salvato.v === 1) store = Object.assign(store, salvato);
@@ -94,6 +94,18 @@
   function sessioni() { return (S.dati.sessioni.sessioni || []).slice().sort(function (a, b) { return (a.data || '').localeCompare(b.data || ''); }); }
   function sessione(id) { return sessioni().filter(function (s) { return s.id === id; })[0]; }
   function sessioneAttiva() { return sessioni().filter(function (s) { return !prog(s.id).fine; })[0] || null; }
+  function elencoCompiti() {
+    var lista = ((S.dati.compiti && S.dati.compiti.compiti) || []).slice();
+    var collegate = {};
+    lista.forEach(function (c) { if (c.sessione) collegate[c.sessione] = true; });
+    sessioni().forEach(function (s) {
+      if (!collegate[s.id]) lista.push({ id: 'sessione-' + s.id, consegna: s.data, materia: s.materia, testo: s.titolo + (s.dove ? ' (' + s.dove.toLowerCase() + ')' : ''), sessione: s.id });
+    });
+    return lista.sort(function (a, b) { return a.consegna.localeCompare(b.consegna); });
+  }
+  function compitoFatto(c) {
+    return !!(store.fatti[c.id] || (c.sessione && store.sess[c.sessione] && store.sess[c.sessione].fine));
+  }
   function primoPezzoDaFare(s) { for (var i = 0; i < s.pezzi.length; i++) { if (!pz(s.id, i).fine) return i; } return s.pezzi.length; }
   function nomeMateria(m) { return m ? m.charAt(0).toUpperCase() + m.slice(1) : ''; }
   function classeMateria(m) { m = (m || '').toLowerCase(); return m === 'storia' || m === 'geografia' ? m : 'altro'; }
@@ -106,8 +118,9 @@
       return r.json();
     });
   }
-  Promise.all([carica('sessioni'), carica('orario'), carica('config')]).then(function (r) {
-    S.dati = { sessioni: r[0], orario: r[1], config: r[2] };
+  Promise.all([carica('sessioni'), carica('orario'), carica('config'), carica('compiti').catch(function () { return { compiti: [] }; })]).then(function (r) {
+    S.dati = { sessioni: r[0], orario: r[1], config: r[2], compiti: r[3] };
+    if (!store.fatti) store.fatti = {};
     vai('oggi');
   }).catch(function () {
     $app.innerHTML = '<div class="screen"><h1 class="title">Non riesco a caricare i dati</h1><p class="muted" style="font-size:20px">Controlla che il tablet sia connesso a internet e riapri l\'app.</p></div>';
@@ -274,28 +287,57 @@
   // ---------- viste ----------
   var VISTE = {};
 
+  function rigaCompito(c) {
+    var fatto = compitoFatto(c);
+    var studio = '';
+    if (c.sessione && sessione(c.sessione)) {
+      var ss = sessione(c.sessione), pr = prog(ss.id);
+      var fattiP = ss.pezzi.filter(function (_, k) { return pz(ss.id, k).fine; }).length;
+      var testoBtn = pr.fine ? 'Rivedi' : fattiP ? 'Continua' : 'Studia con l\'app';
+      studio = '<button class="btn primario piccolo" data-a="studia" data-s="' + esc(ss.id) + '">' + testoBtn + '</button>';
+    }
+    return '<div class="compito' + (fatto ? ' fatto' : '') + '">' +
+      '<button class="spunta" data-a="spunta" data-id="' + esc(c.id) + '" aria-pressed="' + !!fatto + '" aria-label="' + (fatto ? 'Segna come da fare' : 'Segna come fatto') + '">' + ico('check', 24, '#fff', 3.2) + '</button>' +
+      '<div class="testo"><span class="chip mini ' + classeMateria(c.materia) + '">' + esc(nomeMateria(c.materia)) + '</span><span class="t">' + esc(c.testo) + '</span>' +
+      (c.nota ? '<span class="muted small">' + esc(c.nota) + '</span>' : '') + '</div>' + studio + '</div>';
+  }
+
   VISTE.oggi = function () {
-    var s = sessioneAttiva();
+    var giorno = prossimoGiornoScuola();
+    var etichetta = giorniTra(oggi(), giorno) === 1 ? 'domani' : fmtData(giorno).split(' ')[0].toLowerCase();
+    var tutti = elencoCompiti();
+    var perGiorno = tutti.filter(function (c) { return c.consegna === giorno; });
+    var indietro = tutti.filter(function (c) { return c.consegna <= oggi() && c.consegna >= piuGiorni(oggi(), -7) && !compitoFatto(c); });
+    var lista = perGiorno;
+    var fattiN = lista.filter(compitoFatto).length;
+    var finito = lista.length && fattiN === lista.length;
+    var settimanaFine = piuGiorni(oggi(), 7);
+    var avanti = tutti.filter(function (c) { return c.consegna > giorno && c.consegna <= settimanaFine; });
+
+    var titolo = !lista.length ? 'Ciao!' : finito ? 'Per ' + etichetta + ' hai finito!' : 'Ciao! Ecco i compiti per ' + etichetta;
     var head = '<div class="row between wrap" style="align-items:flex-end">' +
       '<div class="col" style="gap:4px"><p class="muted" style="font-size:18px">' + fmtData(oggi()) + '</p>' +
-      '<h1 class="big-title">' + (s ? 'Ciao! Pronta per ' + (classeMateria(s.materia) === 'geografia' ? 'la geografia' : classeMateria(s.materia) === 'storia' ? 'la storia' : esc(nomeMateria(s.materia))) + '?' : 'Ciao!') + '</h1></div>' +
+      '<h1 class="big-title">' + titolo + '</h1></div>' +
       '<span class="pill">' + ico('orologio', 22, '#5B3FC4') + '<span>Libera alle <b>' + esc(cfg('oraFine', '17:30')) + '</b></span></span></div>';
 
-    var sinistra;
-    if (!s) {
-      sinistra = '<div class="card"><span style="align-self:flex-start">' + svgStella(48, '#FFD45C') + '</span><h2 class="title">Per oggi niente di nuovo</h2>' +
-        '<p style="font-size:20px" class="muted">Non ci sono pezzi da studiare. Se papà carica una nuova sessione, la trovi qui.</p></div>';
-    } else {
-      var i = primoPezzoDaFare(s);
-      var tutti = i >= s.pezzi.length;
-      var iniziato = s.pezzi.some(function (_, k) { return pz(s.id, k).inizio; });
-      var cta = tutti
-        ? '<button class="btn primario" data-a="quiz">Al quiz!</button><div class="col" style="gap:2px"><b style="font-size:19px">Pezzi finiti</b><span class="muted small">Manca solo il quiz</span></div>'
-        : '<button class="btn primario" data-a="pezzo" data-i="' + i + '">' + (iniziato ? 'Continua' : 'Si parte!') + '</button><div class="col" style="gap:2px"><b style="font-size:19px">Pezzo ' + (i + 1) + ': ' + esc(s.pezzi[i].titolo) + '</b><span class="muted small">' + (s.pezzi[i].minuti || 8) + ' minuti di lettura, poi ti verifichi</span></div>';
-      sinistra = '<div class="card"><div class="row wrap"><span class="chip ' + classeMateria(s.materia) + '">' + esc(nomeMateria(s.materia)) + '</span><span class="muted" style="font-size:17px">' + esc(s.dove || '') + '</span></div>' +
-        '<h2 class="title" style="font-weight:600">' + esc(s.titolo) + '</h2>' + percorso(s) +
-        '<div class="row wrap" style="margin-top:auto;background:#FFE3DA;border-radius:24px;padding:16px 18px;gap:18px">' + cta + '</div></div>';
-    }
+    var corpo = lista.length
+      ? lista.map(rigaCompito).join('')
+      : '<p style="font-size:20px" class="muted">Niente da fare per ' + etichetta + '.</p>';
+    var giorniAvanti = [];
+    avanti.forEach(function (c) { if (giorniAvanti.indexOf(c.consegna) < 0) giorniAvanti.push(c.consegna); });
+    var gruppi = giorniAvanti.map(function (g) {
+      var del = avanti.filter(function (c) { return c.consegna === g; });
+      var nf = del.filter(compitoFatto).length;
+      var aperto = S.aperti && S.aperti[g];
+      return '<button class="giorno-avanti" data-a="apri" data-g="' + g + '" aria-expanded="' + !!aperto + '"><span>Per ' + esc(fmtData(g).toLowerCase()) + '</span><span class="muted">' + nf + ' su ' + del.length + ' fatti</span></button>' +
+        (aperto ? del.map(rigaCompito).join('') : '');
+    }).join('');
+    var rimasti = indietro.length
+      ? '<p class="label" style="margin-top:14px">Rimasti indietro</p>' + indietro.map(rigaCompito).join('')
+      : '';
+    var sinistra = '<div class="card" style="gap:6px"><div class="row between wrap"><h2 class="subtitle" style="font-weight:700;font-size:28px">Per ' + esc(etichetta) + '</h2>' +
+      (lista.length ? '<span class="pill" style="box-shadow:none;background:#F3EEFF">' + fattiN + ' su ' + lista.length + ' fatti</span>' : '') + '</div>' +
+      corpo + rimasti + (gruppi ? '<h3 class="subtitle" style="margin-top:18px">Più avanti</h3>' + gruppi : '') + '</div>';
 
     var items = ripassoPronto();
     var rip = store.ripFatto === oggi()
@@ -336,6 +378,24 @@
       '<button class="link trasparente" data-a="registro">' + ico('grafico', 20) + ' Per papà</button></div>';
 
     return '<div class="screen">' + head + '<div class="grid-3">' + sinistra + '<div class="col" style="gap:22px">' + rip + zaino + arrivo + daRip + '</div></div>' + nav + '</div>';
+  };
+
+  VISTE.sessione = function () {
+    var s = sessione(S.sessId);
+    if (!s) return VISTE.oggi();
+    var i = primoPezzoDaFare(s);
+    var finiti = i >= s.pezzi.length;
+    var iniziato = s.pezzi.some(function (_, k) { return pz(s.id, k).inizio; });
+    var pr = prog(s.id);
+    var cta = pr.fine
+      ? '<button class="btn primario" data-a="vediRisultato">Com\'è andata</button><div class="col" style="gap:2px"><b style="font-size:19px">Sessione finita</b><span class="muted small">Le domande da ripassare tornano nel ripasso lampo</span></div>'
+      : finiti
+        ? '<button class="btn primario" data-a="quiz">Al quiz!</button><div class="col" style="gap:2px"><b style="font-size:19px">Pezzi finiti</b><span class="muted small">Manca solo il quiz</span></div>'
+        : '<button class="btn primario" data-a="pezzo" data-i="' + i + '">' + (iniziato ? 'Continua' : 'Si parte!') + '</button><div class="col" style="gap:2px"><b style="font-size:19px">Pezzo ' + (i + 1) + ': ' + esc(s.pezzi[i].titolo) + '</b><span class="muted small">' + (s.pezzi[i].minuti || 8) + ' minuti di lettura, poi ti verifichi</span></div>';
+    return '<div class="screen"><button class="link indietro" data-a="home">' + ico('indietro', 20) + ' Oggi</button>' +
+      '<div class="card" style="flex-grow:1"><div class="row wrap"><span class="chip ' + classeMateria(s.materia) + '">' + esc(nomeMateria(s.materia)) + '</span><span class="muted" style="font-size:17px">' + esc(s.dove || '') + '</span></div>' +
+      '<h1 class="title" style="font-weight:600">' + esc(s.titolo) + '</h1>' + percorso(s) +
+      '<div class="row wrap" style="margin-top:auto;background:#FFE3DA;border-radius:24px;padding:16px 18px;gap:18px">' + cta + '</div></div></div>';
   };
 
   VISTE.anteprima = function () {
@@ -541,6 +601,19 @@
       '<p class="muted small" style="margin-top:auto">Orario e verifiche aggiornati da papà</p></div></div></div>';
   };
 
+  function tabellaCompiti() {
+    var da = piuGiorni(oggi(), -7), a = piuGiorni(oggi(), 7);
+    var lista = elencoCompiti().filter(function (c) { return c.consegna >= da && c.consegna <= a; });
+    if (!lista.length) return '';
+    var fatti = lista.filter(compitoFatto).length;
+    return '<div class="card scorri" style="padding:10px 24px"><div class="row between" style="padding-top:12px"><h2 class="subtitle">Compiti</h2><span class="muted">' + fatti + ' su ' + lista.length + ' spuntati</span></div>' +
+      '<table class="tabella"><thead><tr><th>Consegna</th><th>Materia</th><th>Compito</th><th>Stato</th></tr></thead><tbody>' +
+      lista.map(function (c) {
+        var f = compitoFatto(c);
+        return '<tr><td>' + esc(fmtBreve(c.consegna)) + '</td><td>' + esc(nomeMateria(c.materia)) + '</td><td>' + esc(c.testo) + '</td><td>' + (f ? '<b style="color:#5B3FC4">Fatto</b>' : (c.consegna < oggi() ? '<b style="color:#A8301A">Non spuntato</b>' : '<span class="muted">Da fare</span>')) + '</td></tr>';
+      }).join('') + '</tbody></table></div>';
+  }
+
   VISTE.registro = function () {
     var righe = [], giorni = {}, pezziFatti = 0, pezziTot = 0, blocchi = 0, accordo = 0, controllate = 0;
     sessioni().forEach(function (s) {
@@ -582,7 +655,7 @@
       '<button class="btn primario no-print" data-a="stampa">' + ico('scarica', 20, '#fff') + ' Stampa o salva PDF</button></div>' +
       '<div class="stats"><div class="stat"><span class="muted">Lettura al giorno, in media</span><b>' + medio + ' min</b></div>' + papa +
       '<div class="stat"><span class="muted">Ricordato al ripasso</span><b>' + rip + '</b></div><div class="stat"><span class="muted">"Mi sono bloccata"</span><b>' + blocchi + (blocchi === 1 ? ' volta' : ' volte') + '</b></div></div>' +
-      '<div class="card scorri" style="padding:10px 24px">' + tab + '</div>' +
+      '<div class="card scorri" style="padding:10px 24px">' + tab + '</div>' + tabellaCompiti() +
       '<div class="row wrap no-print" style="justify-content:space-between"><button class="link" data-a="suono">Suoni: ' + (store.suono ? 'attivi' : 'spenti') + '</button>' +
       '<button class="link trasparente" data-a="azzera" style="color:#A8301A">Azzera tutti i progressi</button></div></div>';
   };
@@ -602,12 +675,23 @@
   AZ.suono = function () { store.suono = !store.suono; salva(); render(); };
   AZ.azzera = function () {
     if (window.confirm('Cancellare tutti i progressi salvati su questo tablet? Non si può annullare.')) {
-      store = { v: 1, sess: {}, coda: [], ripLog: [], ripFatto: '', suono: store.suono };
+      store = { v: 1, sess: {}, coda: [], ripLog: [], ripFatto: '', suono: store.suono, fatti: {} };
       salva(); vai('oggi');
     }
   };
+  AZ.spunta = function (d, b) {
+    if (store.fatti[d.id]) delete store.fatti[d.id];
+    else { store.fatti[d.id] = Date.now(); suona([784, 1047]); }
+    salva(); render();
+    var nuovo = document.querySelector('[data-a="spunta"][data-id="' + d.id + '"]');
+    if (nuovo && store.fatti[d.id]) nuovo.classList.add('pop');
+    void b;
+  };
+  AZ.apri = function (d) { S.aperti = S.aperti || {}; S.aperti[d.g] = !S.aperti[d.g]; render(); };
+  AZ.studia = function (d) { S.sessId = d.s; vai('sessione'); };
+  AZ.vediRisultato = function () { if (prog(S.sessId).quiz) vai('risultato'); };
   AZ.pezzo = function (d) {
-    var s = sessioneAttiva(); if (!s) return;
+    var s = sessione(S.sessId); if (!s) return;
     S.sessId = s.id; S.pi = +d.i; S.papa = false; S.aiuto = false;
     vai('anteprima');
   };
@@ -693,7 +777,7 @@
     vai('anteprima');
   };
   AZ.quiz = function () {
-    var s = sessioneAttiva(); if (!s) { vai('oggi'); return; }
+    var s = sessione(S.sessId) || sessioneAttiva(); if (!s) { vai('oggi'); return; }
     S.sessId = s.id;
     if (!s.quiz || !s.quiz.length) { finisciSessione(s); return; }
     S.quiz = { i: 0, risposte: [], scelta: null };

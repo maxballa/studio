@@ -1,0 +1,27 @@
+{
+  "compiti": [
+    { "id": "2026-10-26-geometria-studio", "consegna": "2026-10-26", "materia": "Geometria", "tipo": "studio", "testo": "Studiare pag. B202" },
+    { "id": "2026-10-26-geometria-esercizi", "consegna": "2026-10-26", "materia": "Geometria", "tipo": "scritto", "testo": "Esercizi pag. 229, dal n. 1 al n. 5" },
+
+    { "id": "2026-10-27-aritmetica-esercizi", "consegna": "2026-10-27", "materia": "Aritmetica", "tipo": "scritto", "testo": "Esercizi pag. A372, n. 24 e n. 25" },
+    { "id": "2026-10-27-aritmetica-verifica", "consegna": "2026-10-27", "materia": "Aritmetica", "tipo": "studio", "testo": "Ripassare l'unità 7A, le frazioni, per la verifica" },
+    { "id": "2026-10-27-musica-brano", "consegna": "2026-10-27", "materia": "Musica", "tipo": "pratica", "testo": "Ristudiare il brano \"In the mood\" secondo la tua fascia di colore", "nota": "Rossa: tutto. Gialla: tutto tranne l'intro. Verde: solo le note lunghe del riff (Mi, Mi, Fa, Mi, Sol, Do alto). Mi: tutti i fori chiusi tranne gli ultimi due. Fa: tutti chiusi tranne gli ultimi tre. Sol: tutti chiusi tranne gli ultimi quattro. Do alto: chiudere solo il secondo foro dall'alto e il foro posteriore." },
+    { "id": "2026-10-27-approfondimento", "consegna": "2026-10-27", "materia": "Approfondimento", "tipo": "scritto", "testo": "Finire la brutta copia della presentazione di te stessa" },
+    { "id": "2026-10-27-francese-esercizi83", "consegna": "2026-10-27", "materia": "Francese", "tipo": "scritto", "testo": "Es. 3, 4, 5 pag. 83" },
+    { "id": "2026-10-27-francese-lexique", "consegna": "2026-10-27", "materia": "Francese", "tipo": "studio", "testo": "\"Les meubles et les positions\" pag. 84: ascoltare, copiare nella parte di lexique, tradurre e studiare" },
+    { "id": "2026-10-27-francese-quaderno", "consegna": "2026-10-27", "materia": "Francese", "tipo": "scritto", "testo": "Es. 9, 11, 12 sul quaderno" },
+    { "id": "2026-10-27-francese-interrogazione", "consegna": "2026-10-27", "materia": "Francese", "tipo": "studio", "testo": "Studiare dialogo e lessico per l'interrogazione" },
+
+    { "id": "2026-10-28-letteratura-studio", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "studio", "testo": "Rivedere la poesia religiosa e San Francesco" },
+    { "id": "2026-10-28-letteratura-esercizi", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "scritto", "testo": "Es. da 1 a 11 in fondo al Cantico di frate sole" },
+
+    { "id": "2026-10-29-arte-capolettera", "consegna": "2026-10-29", "materia": "Arte", "tipo": "scritto", "testo": "Finire di riportare il capolettera sul foglio da disegno" },
+    { "id": "2026-10-29-arte-studio", "consegna": "2026-10-29", "materia": "Arte", "tipo": "studio", "testo": "Studiare da pag. 123 a pag. 127" },
+    { "id": "2026-10-29-storia", "consegna": "2026-10-29", "materia": "Storia", "tipo": "studio", "testo": "Studiare fino a pag. 377" },
+
+    { "id": "2026-10-30-tecnologia-cubo", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "scritto", "testo": "Se non l'hai finito in classe: sviluppo del cubo su foglio da disegno, poi tagliare e montare", "nota": "Seguire la prima slide su Classroom (materiale: papertoy). Non decorare." },
+    { "id": "2026-10-30-tecnologia-teoria", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare da pag. 153 a pag. 158 e gli appunti" },
+    { "id": "2026-10-30-musica-thewall", "consegna": "2026-10-30", "materia": "Musica", "tipo": "scritto", "testo": "The Wall: traduzione e riflessioni su \"Hey you\", \"Another brick in the wall\" e il finale di \"The trial\"", "nota": "Ascoltare su YouTube, scrivere la traduzione sul pentagramma e cosa significa il testo. Alla fine: cosa significa l'album e cosa significano oggi queste canzoni per te." },
+    { "id": "2026-10-30-grammatica", "consegna": "2026-10-30", "materia": "Grammatica", "tipo": "scritto", "testo": "Preposizioni articolate: copiare la tabella di pag. 408 e fare gli esercizi", "nota": "Es. 1, 2, 3 pag. 407; es. 11 pag. 411; tutti gli es. di pag. 412; es. 2, 3 pag. 417; tutti gli es. di pag. 420." }
+  ]
+}
