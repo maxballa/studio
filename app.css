@@ -162,7 +162,7 @@ p { margin: 0; }
 .orario .giorno { font-family: var(--titoli); font-weight: 600; font-size: 18px; text-align: center; padding: 6px 0; border-radius: 12px; }
 .orario .giorno.oggi { background: var(--viola); color: #fff; }
 .orario .ora { font-size: 15px; color: var(--muted); display: flex; align-items: center; }
-.cella { border-radius: 14px; padding: 8px 10px; min-height: 62px; display: flex; flex-direction: column; justify-content: center; gap: 3px; background: #F7F4FB; font-family: var(--titoli); font-size: 17px; font-weight: 500; }
+.cella { border-radius: 14px; padding: 8px 10px; min-height: 62px; display: flex; flex-direction: column; justify-content: center; gap: 3px; background: #F7F4FB; font-family: var(--titoli); font-size: 17px; font-weight: 500; line-height: 1.15; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: anywhere; }
 .cella.storia { background: var(--storia-chiaro); color: #7E2A18; font-weight: 600; }
 .cella.geografia { background: var(--geo-chiaro); color: var(--geo-testo); font-weight: 600; }
 .cella.verifica { border: 3px solid var(--giallo); }
