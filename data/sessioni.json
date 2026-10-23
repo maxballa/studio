@@ -1,0 +1,77 @@
+{
+  "sessioni": [
+    {
+      "id": "prova-scoperte",
+      "data": "2026-10-26",
+      "materia": "storia",
+      "titolo": "Le grandi scoperte geografiche",
+      "dove": "Sessione di prova",
+      "pezzi": [
+        {
+          "titolo": "Perché si cercano nuove rotte",
+          "dove": "Sul libro: il paragrafo sui commerci con l'Asia",
+          "minuti": 8,
+          "anteprima": "Guarda il titolo e le immagini del paragrafo. Secondo te di cosa parlerà?",
+          "parole": ["spezie", "Ottomani", "caravella"],
+          "domande": [
+            { "d": "Chi cerca nuove rotte?", "r": "Soprattutto i portoghesi e gli spagnoli." },
+            { "d": "Cosa cercano?", "r": "Una via per arrivare in Asia via mare e comprare spezie e merci preziose." },
+            { "d": "Perché?", "r": "Le vie di terra verso l'Asia erano lunghe e care, e dopo il 1453 i turchi ottomani controllavano Costantinopoli." },
+            { "d": "Cosa li aiuta a partire?", "r": "Navi nuove come la caravella e strumenti come la bussola e l'astrolabio." }
+          ]
+        },
+        {
+          "titolo": "Colombo e il viaggio del 1492",
+          "dove": "Sul libro: il paragrafo sul viaggio di Colombo",
+          "minuti": 8,
+          "anteprima": "Guarda la cartina del viaggio. Da dove parte la linea e dove arriva?",
+          "parole": ["Colombo", "rotta verso ovest", "San Salvador"],
+          "domande": [
+            { "d": "Chi parte?", "r": "Cristoforo Colombo, navigatore genovese, aiutato dai re di Spagna." },
+            { "d": "Cosa succede?", "r": "Parte da Palos con tre navi, la Niña, la Pinta e la Santa María, e arriva in un'isola delle Bahamas che chiama San Salvador." },
+            { "d": "Perché parte?", "r": "Vuole raggiungere le Indie navigando verso ovest, invece di girare intorno all'Africa." },
+            { "d": "Cosa cambia dopo?", "r": "Gli europei arrivano in un continente che non conoscevano: l'America." },
+            { "d": "Che data?", "r": "12 ottobre 1492, lo sbarco a San Salvador." }
+          ]
+        },
+        {
+          "titolo": "Vasco da Gama arriva in India",
+          "dove": "Sul libro: il paragrafo su Vasco da Gama",
+          "minuti": 8,
+          "anteprima": "Sulla cartina cerca l'Africa e l'India. Che giro deve fare una nave per andare dall'una all'altra?",
+          "parole": ["Vasco da Gama", "Capo di Buona Speranza", "1498"],
+          "domande": [
+            { "d": "Chi è Vasco da Gama?", "r": "Un navigatore portoghese." },
+            { "d": "Cosa fa?", "r": "Gira intorno all'Africa, passa il Capo di Buona Speranza e arriva in India, a Calicut." },
+            { "d": "Che data?", "r": "1498." },
+            { "d": "Cosa cambia dopo?", "r": "Il Portogallo apre una strada per mare verso le spezie dell'Asia." }
+          ]
+        },
+        {
+          "titolo": "Cosa cambia per l'Europa",
+          "dove": "Sul libro: il paragrafo sulle conseguenze delle scoperte",
+          "minuti": 8,
+          "anteprima": "Leggi solo il titolo e le parole in grassetto. Quali cambiamenti ti aspetti?",
+          "parole": ["Atlantico", "colonie", "nuovi prodotti"],
+          "domande": [
+            { "d": "Dove si spostano i commerci?", "r": "Dal Mediterraneo all'Oceano Atlantico." },
+            { "d": "Cosa arriva in Europa dall'America?", "r": "Prodotti nuovi come mais, patate, pomodori e cacao, e anche oro e argento." },
+            { "d": "Cosa succede alle popolazioni americane?", "r": "Vengono conquistate e muoiono in gran numero per guerre e malattie portate dagli europei." }
+          ]
+        }
+      ],
+      "quiz": [
+        { "tipo": "scelta", "d": "Quale nave NON faceva parte del viaggio di Colombo?", "opzioni": ["Niña", "Pinta", "Victoria", "Santa María"], "giusta": 2 },
+        { "tipo": "scelta", "d": "Da quale porto parte Colombo nel 1492?", "opzioni": ["Genova", "Palos, in Spagna", "Lisbona", "Venezia"], "giusta": 1 },
+        { "tipo": "vf", "d": "Colombo sapeva di aver trovato un nuovo continente.", "giusta": false, "spiega": "Pensava di essere arrivato nelle Indie." },
+        { "tipo": "scelta", "d": "In che anno Vasco da Gama arriva in India?", "opzioni": ["1453", "1492", "1498", "1519"], "giusta": 2 },
+        { "tipo": "vf", "d": "Vasco da Gama era un navigatore portoghese.", "giusta": true },
+        { "tipo": "scelta", "d": "Perché gli europei cercano nuove rotte verso l'Asia?", "opzioni": ["Per trovare nuove terre da coltivare", "Per comprare spezie e merci preziose", "Per scappare da una guerra", "Per studiare le stelle"], "giusta": 1 },
+        { "tipo": "vf", "d": "La caravella era una nave adatta ai lunghi viaggi in mare aperto.", "giusta": true },
+        { "tipo": "scelta", "d": "Dove arriva Colombo il 12 ottobre 1492?", "opzioni": ["In India", "In un'isola delle Bahamas", "In Brasile", "In Africa"], "giusta": 1 },
+        { "tipo": "scelta", "d": "Dopo le scoperte, i commerci si spostano...", "opzioni": ["dall'Atlantico al Mediterraneo", "dal Mediterraneo all'Atlantico", "dal mare alla terra", "verso il Polo Nord"], "giusta": 1 },
+        { "tipo": "vf", "d": "Il pomodoro e il mais arrivano in Europa dall'America.", "giusta": true }
+      ]
+    }
+  ]
+}

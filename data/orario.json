@@ -1,0 +1,14 @@
+{
+  "ore": ["8:00", "9:00", "10:00", "11:00", "12:00", "13:00"],
+  "giorni": {
+    "lun": ["Italiano", "Italiano", "Matematica", "Inglese", "Storia", "Motoria"],
+    "mar": ["Matematica", "Scienze", "Storia", "Italiano", "Arte", "Arte"],
+    "mer": ["Inglese", "Italiano", "Geografia", "Matematica", "Musica", "Tecnologia"],
+    "gio": ["Italiano", "Matematica", "Spagnolo", "Geografia", "Motoria", "Religione"],
+    "ven": ["Matematica", "Scienze", "Italiano", "Inglese", "Spagnolo", "Tecnologia"]
+  },
+  "verifiche": [
+    { "data": "2026-10-27", "ora": 3, "materia": "Storia", "tipo": "Verifica", "cosa": "Le grandi scoperte geografiche" },
+    { "data": "2026-10-29", "ora": 4, "materia": "Geografia", "tipo": "Interrogazione", "cosa": "L'Europa fisica" }
+  ]
+}
