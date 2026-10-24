@@ -24,6 +24,13 @@
   function fmtData(s) { var d = daStr(s); var g = GIORNI[d.getDay()]; return g.charAt(0).toUpperCase() + g.slice(1) + ' ' + d.getDate() + ' ' + MESI[d.getMonth()]; }
   function fmtBreve(s) { var d = daStr(s); return GIORNI[d.getDay()].slice(0, 3).replace(/^./, function (c) { return c.toUpperCase(); }) + ' ' + d.getDate(); }
   function mmss(ms) { var s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + pad(s % 60); }
+  function nome() { return (S.dati && S.dati.config && S.dati.config.nome) || ''; }
+  function conNome(prima, dopo) { return nome() ? prima + ', ' + nome() + dopo : prima + dopo; }
+  function saluto() {
+    var h = new Date().getHours();
+    var s = h < 13 ? 'Buongiorno' : h < 18 ? 'Buon pomeriggio' : 'Buonasera';
+    return nome() ? s + ' ' + nome() : s;
+  }
   function minuscola(s) { s = String(s || ''); return s.charAt(0).toLowerCase() + s.slice(1); }
   function mescola(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
@@ -184,12 +191,12 @@
     var dir = [[-170, -110], [180, -100], [-230, 30], [240, 40], [-120, 120], [130, 130], [10, -150], [-20, 160]];
     var stelle = dir.map(function (d, i) { return svgStella(22 + (i % 3) * 6, colori[i], ' class="burst" style="--dx:' + d[0] + 'px;--dy:' + d[1] + 'px"'); }).join('');
     var testo = rimasti > 0 ? 'Ancora ' + rimasti + (rimasti === 1 ? ' pezzo' : ' pezzi') + ' e hai finito per oggi.' : 'Adesso il quiz, poi hai finito.';
-    $fx.innerHTML = '<div class="fx-msg rise"><b>Pezzo fatto!</b><span>' + testo + '</span></div><div class="fx-centro">' + stelle + '</div>';
+    $fx.innerHTML = '<div class="fx-msg rise"><b>' + conNome('Pezzo fatto', '!') + '</b><span>' + testo + '</span></div><div class="fx-centro">' + stelle + '</div>';
     suona(SUONO_STELLA);
     pulisciFx(2600);
   }
   function fxRecuperata(domanda) {
-    $fx.innerHTML = '<div class="fx-msg rise"><span class="fx-stella-grande spinin">' + svgStella(64, '#2B1B4A') + '</span><b>Questa adesso la sai</b><span>' + esc(domanda) + '</span></div>';
+    $fx.innerHTML = '<div class="fx-msg rise"><span class="fx-stella-grande spinin">' + svgStella(64, '#2B1B4A') + '</span><b>' + conNome('Questa adesso la sai', '') + '</b><span>' + esc(domanda) + '</span></div>';
     suona(SUONO_STELLA);
     pulisciFx(2800);
   }
@@ -199,7 +206,7 @@
     for (var i = 0; i < 12; i++) stelle += svgStella(20 + (i % 3) * 6, colori[i % 3], ' class="fall" style="left:' + (4 + i * 8) + '%;animation-delay:' + ((i * 0.37) % 1.4).toFixed(2) + 's"');
     $fx.innerHTML = '<div class="fx-pieno" role="dialog" aria-label="Sessione finita">' + stelle +
       '<span class="chip rise" style="background:#FFD45C;color:#2B1B4A;align-self:center">' + esc(nomeMateria(s.materia)) + ', ' + fatti + ' pezzi su ' + tot + '</span>' +
-      '<h2 class="rise">Sessione finita!</h2><p class="rise2">Domani ti aspetta il ripasso lampo, ' + cfg('minutiRipasso', 3) + ' minuti.</p>' +
+      '<h2 class="rise">' + conNome('Brava', '!') + '</h2><p class="rise" style="font-family:var(--titoli);font-size:30px;color:#fff">Sessione finita</p><p class="rise2">Domani ti aspetta il ripasso lampo, ' + cfg('minutiRipasso', 3) + ' minuti.</p>' +
       '<button class="btn bianco rise2" data-a="chiudiFx" style="margin-top:12px">Vedi com\'è andata</button></div>';
     suona(SUONO_STELLA);
   }
@@ -314,10 +321,16 @@
     var settimanaFine = piuGiorni(oggi(), 7);
     var avanti = tutti.filter(function (c) { return c.consegna > giorno && c.consegna <= settimanaFine; });
 
-    var titolo = !lista.length ? 'Ciao!' : finito ? 'Per ' + etichetta + ' hai finito!' : 'Ciao! Ecco i compiti per ' + etichetta;
+    var guidate = lista.concat(indietro).filter(function (c) { return c.sessione && sessione(c.sessione) && !compitoFatto(c); });
+    var materieGuidate = [];
+    guidate.forEach(function (c) { var m = minuscola(nomeMateria(c.materia)); if (materieGuidate.indexOf(m) < 0) materieGuidate.push(m); });
+    var sotto = !lista.length ? 'Niente compiti per ' + etichetta + '.'
+      : finito ? 'Per ' + etichetta + ' hai finito tutto.'
+      : materieGuidate.length ? 'Oggi studiamo ' + materieGuidate.join(' e ') + ', poi gli altri compiti per ' + etichetta + '.'
+      : 'Ecco i compiti per ' + etichetta + '.';
     var head = '<div class="row between wrap" style="align-items:flex-end">' +
       '<div class="col" style="gap:4px"><p class="muted" style="font-size:18px">' + fmtData(oggi()) + '</p>' +
-      '<h1 class="big-title">' + titolo + '</h1></div>' +
+      '<h1 class="big-title">' + saluto() + (finito ? '!' : '') + '</h1><p style="font-size:22px">' + esc(sotto) + '</p></div>' +
       '<span class="pill">' + ico('orologio', 22, '#5B3FC4') + '<span>Libera alle <b>' + esc(cfg('oraFine', '17:30')) + '</b></span></span></div>';
 
     var corpo = lista.length
@@ -471,7 +484,7 @@
     return '<div class="screen">' + testata(s, 'Verifica') +
       '<div class="card giallo" style="flex-direction:row;align-items:center;gap:18px;padding:20px 26px">' +
       '<span style="width:60px;height:60px;flex-shrink:0;border-radius:999px;background:#2B1B4A;display:flex;align-items:center;justify-content:center">' + ico('librochiuso', 30, '#FFD45C', 2.2) + '</span>' +
-      '<div class="col grow" style="gap:2px"><h1 class="title" style="font-size:36px">Tocca a te!</h1><p style="font-size:18px">Libro chiuso. Rispondi a voce alta, poi scopri la risposta e segna com\'è andata.</p></div>' +
+      '<div class="col grow" style="gap:2px"><h1 class="title" style="font-size:36px">' + conNome('Tocca a te', '!') + '</h1><p style="font-size:18px">Libro chiuso. Rispondi a voce alta, poi scopri la risposta e segna com\'è andata.</p></div>' +
       '<span class="pill" style="box-shadow:none;font-family:var(--titoli);font-weight:600">' + segnate + ' su ' + dom.length + '</span></div>' +
       '<div class="grid-5"><div class="card" style="gap:10px;padding:22px 24px">' + lista + '</div>' +
       '<div class="col" style="gap:18px">' +
@@ -487,7 +500,7 @@
     var ultimoFatto = S.pi;
     var s = sessione(S.sessId);
     var prossimo = s.pezzi[ultimoFatto + 1];
-    return '<div class="screen"><h1 class="big-title">Pausa!</h1>' +
+    return '<div class="screen"><h1 class="big-title">' + conNome('Pausa', '!') + '</h1>' +
       '<p id="pausaMsg" style="font-size:24px;max-width:640px;line-height:1.4">Alzati, bevi un bicchiere d\'acqua, muoviti un po\'. Il libro resta chiuso.</p>' +
       '<svg class="cerchio" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="110" fill="#fff" stroke="#E8B42E" stroke-width="16"></circle>' +
       '<circle id="cerchioArco" cx="130" cy="130" r="110" fill="none" stroke="#5B3FC4" stroke-width="16" stroke-linecap="round" stroke-dasharray="691" stroke-dashoffset="0" transform="rotate(-90 130 130)"></circle>' +
@@ -548,7 +561,7 @@
     var R = S.rip;
     if (R.i >= R.items.length) {
       return '<div class="screen" style="align-items:center;justify-content:center;text-align:center">' + svgStella(80, '#FFD45C', ' class="spinin"') +
-        '<h1 class="big-title">Ripasso fatto!</h1><p style="font-size:22px" class="muted">Adesso puoi passare allo studio di oggi.</p>' +
+        '<h1 class="big-title">' + conNome('Ripasso fatto', '!') + '</h1><p style="font-size:22px" class="muted">Adesso puoi passare allo studio di oggi.</p>' +
         '<button class="btn primario" data-a="home">Torna a oggi</button></div>';
     }
     var it = R.items[R.i];
