@@ -1,76 +1,81 @@
 {
   "sessioni": [
     {
-      "id": "prova-scoperte",
-      "data": "2026-10-26",
+      "id": "storia-c14-stati-regionali",
+      "data": "2026-10-29",
       "materia": "storia",
-      "titolo": "Le grandi scoperte geografiche",
-      "dove": "Sessione di prova",
+      "titolo": "L'Italia degli Stati regionali",
+      "dove": "Capitolo 14, pagine 370-377",
       "pezzi": [
         {
-          "titolo": "Perché si cercano nuove rotte",
-          "dove": "Sul libro: il paragrafo sui commerci con l'Asia",
+          "titolo": "Dal Comune alla Signoria e al Principato",
+          "dove": "Pagina 370 (riquadro rosso) e pagina 372",
           "minuti": 8,
-          "anteprima": "Guarda il titolo e le immagini del paragrafo. Secondo te di cosa parlerà?",
-          "parole": ["spezie", "Ottomani", "caravella"],
+          "anteprima": "Guarda l'affresco a pagina 372: il duca a destra calpesta i simboli della giustizia. Che tipo di governante sembra?",
+          "parole": ["Comune", "Signoria", "Principato"],
           "domande": [
-            { "d": "Chi cerca nuove rotte?", "r": "Soprattutto i portoghesi e gli spagnoli." },
-            { "d": "Cosa cercano?", "r": "Una via per arrivare in Asia via mare e comprare spezie e merci preziose." },
-            { "d": "Perché?", "r": "Le vie di terra verso l'Asia erano lunghe e care, e dopo il 1453 i turchi ottomani controllavano Costantinopoli." },
-            { "d": "Cosa li aiuta a partire?", "r": "Navi nuove come la caravella e strumenti come la bussola e l'astrolabio." }
+            { "d": "Perché i Comuni affidano il potere a un solo signore?", "r": "Per crisi economica, guerre e lotte interne serviva un governo forte che decidesse in fretta." },
+            { "d": "Che differenza c'è tra Signoria e Principato?", "r": "Nel Principato il signore ha un titolo (duca, marchese) dal papa o dall'imperatore e lo passa a un erede." },
+            { "d": "Quali città restano Repubbliche?", "r": "Firenze e Venezia." }
           ]
         },
         {
-          "titolo": "Colombo e il viaggio del 1492",
-          "dove": "Sul libro: il paragrafo sul viaggio di Colombo",
-          "minuti": 8,
-          "anteprima": "Guarda la cartina del viaggio. Da dove parte la linea e dove arriva?",
-          "parole": ["Colombo", "rotta verso ovest", "San Salvador"],
+          "titolo": "I condottieri",
+          "dove": "Pagina 373",
+          "minuti": 5,
+          "anteprima": "Guarda i due monumenti a cavallo. Chi pensi fossero questi uomini?",
+          "parole": ["mercenari", "condottiero", "condotta"],
           "domande": [
-            { "d": "Chi parte?", "r": "Cristoforo Colombo, navigatore genovese, aiutato dai re di Spagna." },
-            { "d": "Cosa succede?", "r": "Parte da Palos con tre navi, la Niña, la Pinta e la Santa María, e arriva in un'isola delle Bahamas che chiama San Salvador." },
-            { "d": "Perché parte?", "r": "Vuole raggiungere le Indie navigando verso ovest, invece di girare intorno all'Africa." },
-            { "d": "Cosa cambia dopo?", "r": "Gli europei arrivano in un continente che non conoscevano: l'America." },
-            { "d": "Che data?", "r": "12 ottobre 1492, lo sbarco a San Salvador." }
+            { "d": "Chi sono i condottieri?", "r": "Capi di soldati mercenari, pagati dai signori per combattere con un contratto chiamato condotta." },
+            { "d": "Perché erano pericolosi?", "r": "Potevano passare al nemico se pagati meglio o prendere il potere con la forza." }
           ]
         },
         {
-          "titolo": "Vasco da Gama arriva in India",
-          "dove": "Sul libro: il paragrafo su Vasco da Gama",
+          "titolo": "Gli Stati regionali e la pace",
+          "dove": "Pagina 374 con la carta, più il box su Lorenzo de' Medici a pagina 370",
           "minuti": 8,
-          "anteprima": "Sulla cartina cerca l'Africa e l'India. Che giro deve fare una nave per andare dall'una all'altra?",
-          "parole": ["Vasco da Gama", "Capo di Buona Speranza", "1498"],
+          "anteprima": "Guarda la carta dell'Italia nel XIV secolo. Quanti colori vedi? Cosa vuol dire?",
+          "parole": ["Stati regionali", "divisione", "pace del 1454"],
           "domande": [
-            { "d": "Chi è Vasco da Gama?", "r": "Un navigatore portoghese." },
-            { "d": "Cosa fa?", "r": "Gira intorno all'Africa, passa il Capo di Buona Speranza e arriva in India, a Calicut." },
-            { "d": "Che data?", "r": "1498." },
-            { "d": "Cosa cambia dopo?", "r": "Il Portogallo apre una strada per mare verso le spezie dell'Asia." }
+            { "d": "Quali sono gli Stati più forti?", "r": "Milano e Venezia al Nord, Firenze e lo Stato della Chiesa al Centro, il Regno di Napoli al Sud." },
+            { "d": "Perché l'Italia non diventa un solo Stato e cosa succede?", "r": "È divisa in tanti Stati sempre in guerra: resta debole e dal XVI secolo verrà conquistata." },
+            { "d": "Cosa succede nel 1454 e chi difende la pace?", "r": "I principi firmano una pace di cinquant'anni. Lorenzo de' Medici lavora perché nessuno Stato diventi più forte degli altri." }
           ]
         },
         {
-          "titolo": "Cosa cambia per l'Europa",
-          "dove": "Sul libro: il paragrafo sulle conseguenze delle scoperte",
-          "minuti": 8,
-          "anteprima": "Leggi solo il titolo e le parole in grassetto. Quali cambiamenti ti aspetti?",
-          "parole": ["Atlantico", "colonie", "nuovi prodotti"],
+          "titolo": "Milano",
+          "dove": "Pagina 375",
+          "minuti": 6,
+          "anteprima": "Guarda la carta del Ducato di Milano. Quanto cresce dal 1385 al 1402?",
+          "parole": ["Visconti", "Gian Galeazzo", "Sforza"],
           "domande": [
-            { "d": "Dove si spostano i commerci?", "r": "Dal Mediterraneo all'Oceano Atlantico." },
-            { "d": "Cosa arriva in Europa dall'America?", "r": "Prodotti nuovi come mais, patate, pomodori e cacao, e anche oro e argento." },
-            { "d": "Cosa succede alle popolazioni americane?", "r": "Vengono conquistate e muoiono in gran numero per guerre e malattie portate dagli europei." }
+            { "d": "Chi governa Milano dal 1311?", "r": "La famiglia Visconti." },
+            { "d": "Cosa fa Gian Galeazzo Visconti?", "r": "Diventa duca nel 1395, fa iniziare il Duomo e conquista molti territori fino a minacciare Firenze." },
+            { "d": "Chi viene dopo i Visconti?", "r": "Francesco Sforza, un condottiero, che diventa duca nel 1450." }
+          ]
+        },
+        {
+          "titolo": "Venezia e Firenze",
+          "dove": "Pagine 376 e 377",
+          "minuti": 8,
+          "anteprima": "Guarda la carta di Venezia a pagina 376: oltre al Veneto, dove arriva?",
+          "parole": ["doge", "terraferma", "guelfi"],
+          "domande": [
+            { "d": "Chi governa Venezia?", "r": "Il doge, eletto dalle famiglie più ricche: governano in pochi (oligarchia)." },
+            { "d": "Perché Venezia conquista terre?", "r": "Gli Ottomani le bloccano i commerci per mare, allora si allarga sulla terraferma." },
+            { "d": "Su cosa si basa Firenze e chi la governa?", "r": "Su commercio, lana e banche. Governano i guelfi, divisi in bianchi e neri sempre in lotta." }
           ]
         }
       ],
       "quiz": [
-        { "tipo": "scelta", "d": "Quale nave NON faceva parte del viaggio di Colombo?", "opzioni": ["Niña", "Pinta", "Victoria", "Santa María"], "giusta": 2 },
-        { "tipo": "scelta", "d": "Da quale porto parte Colombo nel 1492?", "opzioni": ["Genova", "Palos, in Spagna", "Lisbona", "Venezia"], "giusta": 1 },
-        { "tipo": "vf", "d": "Colombo sapeva di aver trovato un nuovo continente.", "giusta": false, "spiega": "Pensava di essere arrivato nelle Indie." },
-        { "tipo": "scelta", "d": "In che anno Vasco da Gama arriva in India?", "opzioni": ["1453", "1492", "1498", "1519"], "giusta": 2 },
-        { "tipo": "vf", "d": "Vasco da Gama era un navigatore portoghese.", "giusta": true },
-        { "tipo": "scelta", "d": "Perché gli europei cercano nuove rotte verso l'Asia?", "opzioni": ["Per trovare nuove terre da coltivare", "Per comprare spezie e merci preziose", "Per scappare da una guerra", "Per studiare le stelle"], "giusta": 1 },
-        { "tipo": "vf", "d": "La caravella era una nave adatta ai lunghi viaggi in mare aperto.", "giusta": true },
-        { "tipo": "scelta", "d": "Dove arriva Colombo il 12 ottobre 1492?", "opzioni": ["In India", "In un'isola delle Bahamas", "In Brasile", "In Africa"], "giusta": 1 },
-        { "tipo": "scelta", "d": "Dopo le scoperte, i commerci si spostano...", "opzioni": ["dall'Atlantico al Mediterraneo", "dal Mediterraneo all'Atlantico", "dal mare alla terra", "verso il Polo Nord"], "giusta": 1 },
-        { "tipo": "vf", "d": "Il pomodoro e il mais arrivano in Europa dall'America.", "giusta": true }
+        { "tipo": "scelta", "d": "Perché i Comuni scelgono un solo signore?", "opzioni": ["Perché il papa lo ordina", "Per avere un governo forte", "Per fare guerra alla Francia", "Perché nessuno vuole votare"], "giusta": 1, "pag": "372" },
+        { "tipo": "vf", "d": "In un Principato il potere passa a un erede.", "giusta": true, "pag": "372" },
+        { "tipo": "scelta", "d": "Quali città restano Repubbliche?", "opzioni": ["Milano e Napoli", "Firenze e Venezia", "Roma e Genova", "Mantova e Ferrara"], "giusta": 1, "pag": "372" },
+        { "tipo": "vf", "d": "I condottieri combattevano gratis per la loro città.", "giusta": false, "spiega": "Erano mercenari: combattevano per chi li pagava.", "pag": "373" },
+        { "tipo": "scelta", "d": "Cosa succede all'Italia divisa in tanti Stati?", "opzioni": ["Diventa la più forte d'Europa", "Resta debole e verrà conquistata", "Diventa un regno unico", "Smette di fare guerre"], "giusta": 1, "pag": "374" },
+        { "tipo": "scelta", "d": "Chi diventa duca di Milano nel 1450?", "opzioni": ["Gian Galeazzo Visconti", "Lorenzo de' Medici", "Francesco Sforza", "Il doge"], "giusta": 2, "pag": "375" },
+        { "tipo": "scelta", "d": "Chi governa Venezia?", "opzioni": ["Un re", "Il papa", "Il doge", "Un duca"], "giusta": 2, "pag": "376" },
+        { "tipo": "scelta", "d": "Cosa fa Lorenzo de' Medici?", "opzioni": ["Conquista Milano", "Difende la pace tra gli Stati", "Unisce l'Italia", "Fonda Venezia"], "giusta": 1, "pag": "370" }
       ]
     }
   ]
