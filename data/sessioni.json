@@ -77,6 +77,228 @@
         { "tipo": "scelta", "d": "Chi governa Venezia?", "opzioni": ["Un re", "Il papa", "Il doge", "Un duca"], "giusta": 2, "pag": "376" },
         { "tipo": "scelta", "d": "Cosa fa Lorenzo de' Medici?", "opzioni": ["Conquista Milano", "Difende la pace tra gli Stati", "Unisce l'Italia", "Fonda Venezia"], "giusta": 1, "pag": "370" }
       ]
+    },
+    {
+      "id": "tecnologia-edilizia-153-158",
+      "data": "2026-10-30",
+      "materia": "tecnologia",
+      "titolo": "L'edilizia: fondazioni, coperture, involucro",
+      "dove": "Pagine 153-158",
+      "pezzi": [
+        {
+          "titolo": "Le fondazioni e il sottosuolo",
+          "dove": "Pagina 153",
+          "minuti": 8,
+          "anteprima": "Guarda i disegni in fondo alla pagina: cosa c'è sotto i pilastri di un edificio?",
+          "parole": [
+            "fondazioni",
+            "sottosuolo",
+            "plinti"
+          ],
+          "domande": [
+            {
+              "d": "A cosa servono le fondazioni?",
+              "r": "Sostengono l'edificio e trasmettono i suoi carichi al terreno."
+            },
+            {
+              "d": "Cosa si controlla con l'analisi del sottosuolo?",
+              "r": "Di che rocce è fatto il terreno (sabbia, argilla, roccia), se c'è acqua e se la zona è sismica."
+            },
+            {
+              "d": "Quali sono le fondazioni dirette?",
+              "r": "Le fondazioni a platea e a plinti, che stanno negli strati più superficiali del terreno."
+            }
+          ]
+        },
+        {
+          "titolo": "Fondazioni indirette, idrauliche e antisismiche",
+          "dove": "Pagina 154",
+          "minuti": 8,
+          "anteprima": "Guarda i due palazzi in fondo alla pagina: durante il terremoto uno si deforma, l'altro no. Perché?",
+          "parole": [
+            "pali",
+            "idrauliche",
+            "isolatori sismici"
+          ],
+          "domande": [
+            {
+              "d": "Quando si usano le fondazioni indirette?",
+              "r": "Quando il suolo è poco resistente o l'edificio è molto grande: i pali scendono fino a uno strato resistente."
+            },
+            {
+              "d": "Come si fanno le fondazioni in presenza di acqua?",
+              "r": "Si argina la zona e si prosciuga il terreno; in mare si affondano casse riempite di calcestruzzo."
+            },
+            {
+              "d": "Cosa fanno gli isolatori sismici?",
+              "r": "Stanno tra fondazioni e struttura e assorbono le scosse, così l'edificio diventa elastico e non crolla."
+            }
+          ]
+        },
+        {
+          "titolo": "Com'è fatto un tetto",
+          "dove": "Pagina 155",
+          "minuti": 8,
+          "anteprima": "Guarda le tre foto: un tetto di pietra, uno di acciaio e vetro, uno d'erba. Cosa hanno in comune?",
+          "parole": [
+            "struttura",
+            "manto",
+            "falde"
+          ],
+          "domande": [
+            {
+              "d": "Da quali due parti è fatto un tetto?",
+              "r": "Dalla struttura, che regge il peso, e dal manto di copertura, che fa scivolare acqua e neve e ripara da sole e vento."
+            },
+            {
+              "d": "Che differenza c'è tra tetto piano calpestabile e non calpestabile?",
+              "r": "Su quello calpestabile si cammina, come su un terrazzo; l'altro è coperto da strati impermeabili protetti da ghiaia."
+            },
+            {
+              "d": "Perché il tetto a falde va bene nei climi temperati?",
+              "r": "I piani inclinati fanno scivolare via pioggia e neve."
+            }
+          ]
+        },
+        {
+          "titolo": "Capriate e coperture per grandi spazi",
+          "dove": "Pagina 156",
+          "minuti": 8,
+          "anteprima": "Guarda il disegno della capriata con le frecce rosse e le tre foto in basso: cupola, tenda, pallone.",
+          "parole": [
+            "capriata",
+            "catena",
+            "cupola geodetica"
+          ],
+          "domande": [
+            {
+              "d": "Cos'è una capriata?",
+              "r": "Una struttura triangolare, di solito in legno, che regge il tetto a falde."
+            },
+            {
+              "d": "A cosa serve la catena?",
+              "r": "È la trave orizzontale alla base del triangolo e impedisce ai puntoni di aprirsi."
+            },
+            {
+              "d": "Quali coperture si usano per i grandi spazi?",
+              "r": "Cupole geodetiche, tensostrutture e pressostrutture."
+            }
+          ]
+        },
+        {
+          "titolo": "L'involucro edilizio",
+          "dove": "Pagine 157 e 158",
+          "minuti": 8,
+          "anteprima": "Guarda la torre di Abu Dhabi e il muro di piante a Parigi: sono tutte e due la pelle di un edificio.",
+          "parole": [
+            "involucro",
+            "isolamento termico",
+            "facciate interattive"
+          ],
+          "domande": [
+            {
+              "d": "Cos'è l'involucro edilizio?",
+              "r": "Tutti gli elementi che separano l'interno dall'esterno: la pelle dell'edificio."
+            },
+            {
+              "d": "Perché l'involucro deve isolare bene?",
+              "r": "Tiene il caldo d'inverno e il fresco d'estate, così si usano meno riscaldamento e condizionatore."
+            },
+            {
+              "d": "Quali tipi di involucro efficiente conosci?",
+              "r": "Facciate interattive con elementi mobili, facciate con pannelli fotovoltaici e rivestimenti verdi."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "tipo": "scelta",
+          "d": "Dove stanno le fondazioni dirette?",
+          "opzioni": [
+            "Molto in profondità",
+            "Negli strati superficiali del terreno",
+            "Sott'acqua",
+            "Sotto il tetto"
+          ],
+          "giusta": 1,
+          "pag": "153"
+        },
+        {
+          "tipo": "vf",
+          "d": "I plinti sono blocchi di calcestruzzo armato alla base dei pilastri.",
+          "giusta": true,
+          "pag": "153"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Quali fondazioni sono indirette?",
+          "opzioni": [
+            "A platea",
+            "A plinti",
+            "A pali",
+            "A falde"
+          ],
+          "giusta": 2,
+          "pag": "154"
+        },
+        {
+          "tipo": "vf",
+          "d": "Gli isolatori sismici rendono la struttura più rigida.",
+          "giusta": false,
+          "spiega": "La rendono elastica e assorbono le scosse.",
+          "pag": "154"
+        },
+        {
+          "tipo": "scelta",
+          "d": "A cosa serve il manto di copertura?",
+          "opzioni": [
+            "A far scivolare acqua e neve e riparare da sole e vento",
+            "A reggere il peso del tetto",
+            "A portare i carichi al terreno",
+            "A dividere le stanze"
+          ],
+          "giusta": 0,
+          "pag": "155"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Nella capriata, la trave che impedisce ai puntoni di aprirsi si chiama...",
+          "opzioni": [
+            "Monaco",
+            "Saettone",
+            "Correntino",
+            "Catena"
+          ],
+          "giusta": 3,
+          "pag": "156"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Cosa tiene su una pressostruttura?",
+          "opzioni": [
+            "Aste di acciaio",
+            "Aria immessa di continuo",
+            "Pali nel terreno",
+            "Capriate di legno"
+          ],
+          "giusta": 1,
+          "pag": "156"
+        },
+        {
+          "tipo": "vf",
+          "d": "L'involucro deve tenere il calore d'inverno e il fresco d'estate.",
+          "giusta": true,
+          "pag": "157"
+        },
+        {
+          "tipo": "vf",
+          "d": "Il verde sulle facciate aumenta l'anidride carbonica nell'aria.",
+          "giusta": false,
+          "spiega": "Produce ossigeno e la riduce.",
+          "pag": "158"
+        }
+      ]
     }
   ]
 }

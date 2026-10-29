@@ -20,7 +20,7 @@
     { "id": "2026-10-29-storia", "consegna": "2026-10-29", "materia": "Storia", "tipo": "studio", "testo": "Studiare fino a pag. 377 (capitolo 14, L'Italia degli Stati regionali)", "sessione": "storia-c14-stati-regionali" },
 
     { "id": "2026-10-30-tecnologia-cubo", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "scritto", "testo": "Se non l'hai finito in classe: sviluppo del cubo su foglio da disegno, poi tagliare e montare", "nota": "Seguire la prima slide su Classroom (materiale: papertoy). Non decorare." },
-    { "id": "2026-10-30-tecnologia-teoria", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare da pag. 153 a pag. 158 e gli appunti" },
+    { "id": "2026-10-30-tecnologia-teoria", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare da pag. 153 a pag. 158 e gli appunti", "sessione": "tecnologia-edilizia-153-158" },
     { "id": "2026-10-30-musica-thewall", "consegna": "2026-10-30", "materia": "Musica", "tipo": "scritto", "testo": "The Wall: traduzione e riflessioni su \"Hey you\", \"Another brick in the wall\" e il finale di \"The trial\"", "nota": "Ascoltare su YouTube, scrivere la traduzione sul pentagramma e cosa significa il testo. Alla fine: cosa significa l'album e cosa significano oggi queste canzoni per te." },
     { "id": "2026-10-30-grammatica", "consegna": "2026-10-30", "materia": "Grammatica", "tipo": "scritto", "testo": "Preposizioni articolate: copiare la tabella di pag. 408 e fare gli esercizi", "nota": "Es. 1, 2, 3 pag. 407; es. 11 pag. 411; tutti gli es. di pag. 412; es. 2, 3 pag. 417; tutti gli es. di pag. 420." }
   ]
