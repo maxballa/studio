@@ -299,6 +299,240 @@
           "pag": "158"
         }
       ]
+    },
+    {
+      "id": "tecnologia-verifica-edilizia-150-158",
+      "data": "2026-11-06",
+      "materia": "tecnologia",
+      "titolo": "Verifica: strutture, fondazioni, coperture, involucro",
+      "dove": "Pagine 150-158 e appunti",
+      "pezzi": [
+        {
+          "titolo": "Le forze e i carichi",
+          "dove": "Pagina 150",
+          "minuti": 8,
+          "anteprima": "Guarda la torre di blocchi e la gru: cosa tiene in piedi un edificio?",
+          "parole": [
+            "trazione",
+            "compressione",
+            "flessione"
+          ],
+          "domande": [
+            {
+              "d": "Quali forze agiscono sulle strutture?",
+              "r": "Trazione (allunga il materiale), compressione (lo schiaccia) e flessione (lo piega)."
+            },
+            {
+              "d": "Cosa bisogna calcolare perché una struttura resti in equilibrio?",
+              "r": "Il peso proprio della costruzione e i carichi accidentali, come arredi, persone, vento e neve."
+            },
+            {
+              "d": "Cos'è il carico ammissibile?",
+              "r": "Il carico che la struttura è in grado di sostenere."
+            }
+          ]
+        },
+        {
+          "titolo": "Le strutture portanti",
+          "dove": "Pagine 151 e 152",
+          "minuti": 8,
+          "anteprima": "Guarda Stonehenge, l'arco e il palazzo in costruzione: sono tre modi di costruire.",
+          "parole": [
+            "trilitico",
+            "arco",
+            "telaio"
+          ],
+          "domande": [
+            {
+              "d": "Com'è fatto il sistema trilitico?",
+              "r": "Due piedritti verticali e un architrave appoggiato sopra; è il sistema più antico."
+            },
+            {
+              "d": "Come si costruisce un arco?",
+              "r": "Si affiancano i conci su una centina di legno e si chiude in alto con la chiave di volta."
+            },
+            {
+              "d": "Cos'è il sistema a telaio?",
+              "r": "Pilastri e travi uniti tra loro, in calcestruzzo armato, legno o acciaio."
+            }
+          ]
+        },
+        {
+          "titolo": "Le fondazioni",
+          "dove": "Pagine 153 e 154",
+          "minuti": 8,
+          "anteprima": "Guarda i disegni di platea, plinti e pali: cosa c'è sotto un edificio?",
+          "parole": [
+            "dirette",
+            "indirette",
+            "isolatori sismici"
+          ],
+          "domande": [
+            {
+              "d": "A cosa servono le fondazioni e cosa si controlla prima di farle?",
+              "r": "Sostengono l'edificio e portano i carichi al terreno; prima si analizza il sottosuolo: rocce, acqua, zona sismica."
+            },
+            {
+              "d": "Che differenza c'è tra fondazioni dirette e indirette?",
+              "r": "Le dirette (platea, plinti) si usano se il terreno resistente è in superficie, le indirette (pali) se è in profondità."
+            },
+            {
+              "d": "Cosa si fa se c'è acqua o se la zona è sismica?",
+              "r": "Con l'acqua si fanno fondazioni idrauliche; nelle zone sismiche si mettono isolatori sismici che ammortizzano le scosse."
+            }
+          ]
+        },
+        {
+          "titolo": "Le coperture",
+          "dove": "Pagine 155 e 156",
+          "minuti": 8,
+          "anteprima": "Tetto di pietra, di vetro, d'erba, e poi la capriata con le frecce rosse.",
+          "parole": [
+            "manto",
+            "falde",
+            "capriata"
+          ],
+          "domande": [
+            {
+              "d": "Da quali due parti è fatto un tetto?",
+              "r": "Dalla struttura che regge il peso e dal manto di copertura che ripara da acqua, neve, sole e vento."
+            },
+            {
+              "d": "Che differenza c'è tra tetto a falde e tetto piano?",
+              "r": "Il tetto a falde ha piani inclinati e struttura a capriata; il tetto piano ha una superficie orizzontale e struttura a telaio."
+            },
+            {
+              "d": "Quali coperture si usano per i grandi spazi?",
+              "r": "Cupole geodetiche, tensostrutture e pressostrutture."
+            }
+          ]
+        },
+        {
+          "titolo": "L'involucro edilizio",
+          "dove": "Pagine 157 e 158",
+          "minuti": 8,
+          "anteprima": "La torre di Abu Dhabi e il muro di piante a Parigi sono la pelle di un edificio.",
+          "parole": [
+            "involucro",
+            "isolamento",
+            "efficienza energetica"
+          ],
+          "domande": [
+            {
+              "d": "Cos'è l'involucro e a cosa serve?",
+              "r": "Separa l'interno dall'esterno; protegge da agenti atmosferici e intrusioni e isola dal caldo, dal freddo e dai rumori."
+            },
+            {
+              "d": "Perché l'involucro deve avere una buona efficienza energetica?",
+              "r": "Così si risparmia energia per luce e riscaldamento e si inquina meno."
+            },
+            {
+              "d": "Quali tipi di involucro efficiente conosci?",
+              "r": "Facciate interattive, facciate con pannelli fotovoltaici e rivestimenti verdi."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "tipo": "scelta",
+          "d": "La forza che tende a piegare il materiale è la...",
+          "opzioni": [
+            "Trazione",
+            "Compressione",
+            "Flessione",
+            "Tensione"
+          ],
+          "giusta": 2,
+          "pag": "150"
+        },
+        {
+          "tipo": "vf",
+          "d": "Le persone e la neve fanno parte del peso proprio dell'edificio.",
+          "giusta": false,
+          "spiega": "Sono carichi accidentali.",
+          "pag": "150"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Il sistema costruttivo più antico è...",
+          "opzioni": [
+            "Ad archi",
+            "A telaio",
+            "Trilitico",
+            "A capriata"
+          ],
+          "giusta": 2,
+          "pag": "151"
+        },
+        {
+          "tipo": "scelta",
+          "d": "L'elemento centrale che chiude l'arco in alto si chiama...",
+          "opzioni": [
+            "Centina",
+            "Chiave di volta",
+            "Piedritto",
+            "Architrave"
+          ],
+          "giusta": 1,
+          "pag": "151"
+        },
+        {
+          "tipo": "vf",
+          "d": "Nel calcestruzzo armato l'acciaio resiste alla trazione.",
+          "giusta": true,
+          "pag": "152"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Le fondazioni a pali sono...",
+          "opzioni": [
+            "Dirette",
+            "Indirette",
+            "Idrauliche",
+            "A platea"
+          ],
+          "giusta": 1,
+          "pag": "154"
+        },
+        {
+          "tipo": "vf",
+          "d": "Gli isolatori sismici rendono la struttura più rigida.",
+          "giusta": false,
+          "spiega": "La rendono elastica e assorbono le scosse.",
+          "pag": "154"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Nella capriata, la trave che impedisce ai puntoni di aprirsi si chiama...",
+          "opzioni": [
+            "Monaco",
+            "Saettone",
+            "Catena",
+            "Correntino"
+          ],
+          "giusta": 2,
+          "pag": "156"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Cosa tiene su una pressostruttura?",
+          "opzioni": [
+            "Aste di acciaio",
+            "Aria immessa di continuo",
+            "Pali nel terreno",
+            "Capriate di legno"
+          ],
+          "giusta": 1,
+          "pag": "156"
+        },
+        {
+          "tipo": "vf",
+          "d": "Un buon involucro tiene il calore d'inverno e il fresco d'estate.",
+          "giusta": true,
+          "pag": "157"
+        }
+      ]
     }
   ]
 }
