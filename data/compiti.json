@@ -24,6 +24,7 @@
     { "id": "2026-10-30-musica-thewall", "consegna": "2026-10-30", "materia": "Musica", "tipo": "scritto", "testo": "The Wall: traduzione e riflessioni su \"Hey you\", \"Another brick in the wall\" e il finale di \"The trial\"", "nota": "Ascoltare su YouTube, scrivere la traduzione sul pentagramma e cosa significa il testo. Alla fine: cosa significa l'album e cosa significano oggi queste canzoni per te." },
     { "id": "2026-10-30-grammatica", "consegna": "2026-10-30", "materia": "Grammatica", "tipo": "scritto", "testo": "Preposizioni articolate: copiare la tabella di pag. 408 e fare gli esercizi", "nota": "Es. 1, 2, 3 pag. 407; es. 11 pag. 411; tutti gli es. di pag. 412; es. 2, 3 pag. 417; tutti gli es. di pag. 420." },
 
-    { "id": "2026-11-06-tecnologia-verifica", "consegna": "2026-11-06", "materia": "Tecnologia", "tipo": "studio", "testo": "Verifica: ripassare appunti e libro da pag. 150 a pag. 158", "sessione": "tecnologia-verifica-edilizia-150-158" }
+    { "id": "2026-11-06-tecnologia-verifica", "consegna": "2026-11-06", "materia": "Tecnologia", "tipo": "studio", "testo": "Verifica: ripassare appunti e libro da pag. 150 a pag. 158", "sessione": "tecnologia-verifica-edilizia-150-158" },
+    { "id": "2026-11-11-storia-verifica", "consegna": "2026-11-11", "materia": "Storia", "tipo": "studio", "testo": "Verifica capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Escluse Cola di Rienzo (pag. 379) e il box di educazione civica di pag. 381.", "sessione": "storia-c14-verifica-370-384" }
   ]
 }

@@ -533,6 +533,242 @@
           "pag": "157"
         }
       ]
+    },
+    {
+      "id": "storia-c14-verifica-370-384",
+      "data": "2026-11-11",
+      "materia": "storia",
+      "titolo": "Verifica: L'Italia degli Stati regionali",
+      "dove": "Capitolo 14, pagine 370-384 (senza Cola di Rienzo e senza pagina 381)",
+      "pezzi": [
+        {
+          "titolo": "Ripasso: dalla Signoria agli Stati regionali",
+          "dove": "Pagine 372-377, già studiate",
+          "minuti": 5,
+          "anteprima": "Sfoglia le pagine da 372 a 377: quali nomi e quali date ti ricordi?",
+          "parole": [
+            "Principato",
+            "frammentazione",
+            "terraferma"
+          ],
+          "domande": [
+            {
+              "d": "Come si passa dalla Signoria al Principato?",
+              "r": "Il signore riceve dal papa o dall'imperatore un titolo ereditario e può lasciare il potere a un erede."
+            },
+            {
+              "d": "Che conseguenze ha la frammentazione dell'Italia?",
+              "r": "L'Italia è debole militarmente e cresce poco nell'economia, perché ogni Stato ha leggi, tasse e dogane diverse."
+            },
+            {
+              "d": "Contro chi combatte Venezia per allargarsi sulla terraferma?",
+              "r": "Contro i signori del Veneto e contro i Visconti di Milano, che batte a Maclodio nel 1427."
+            }
+          ]
+        },
+        {
+          "titolo": "Firenze, i Medici e i Savoia",
+          "dove": "Fine di pagina 377 e pagina 378 fino agli Stati minori",
+          "minuti": 8,
+          "anteprima": "Guarda la cartina \"Dov'è il Ducato di Savoia?\" a pagina 378: tra quali due paesi si trova?",
+          "parole": [
+            "priori",
+            "Cosimo de' Medici",
+            "Savoia"
+          ],
+          "domande": [
+            {
+              "d": "Come governa Cosimo de' Medici dal 1434?",
+              "r": "Come una Signoria \"di fatto\", senza abolire le istituzioni del Comune."
+            },
+            {
+              "d": "Quando i Medici diventano duchi?",
+              "r": "Solo nel 1532, con il titolo dato dal papa."
+            },
+            {
+              "d": "Perché il Ducato di Savoia è diverso dagli altri Stati?",
+              "r": "Nasce dalle terre feudali della famiglia Savoia. Amedeo VIII diventa duca nel 1416."
+            }
+          ]
+        },
+        {
+          "titolo": "Stati minori e Stato della Chiesa",
+          "dove": "Pagina 378 (Stati del Centro-Nord) e pagina 379, senza Cola di Rienzo",
+          "minuti": 6,
+          "anteprima": "Guarda i tre ritratti di profilo a pagina 379: sono signori di piccoli Stati. Perché si facevano ritrarre da grandi pittori?",
+          "parole": [
+            "Genova",
+            "Urbino",
+            "baroni"
+          ],
+          "domande": [
+            {
+              "d": "Quali sono alcuni Stati minori del Centro-Nord?",
+              "r": "Genova, Mantova dei Gonzaga, Urbino dei Montefeltro, Rimini dei Malatesta, Ferrara degli Este."
+            },
+            {
+              "d": "Cosa succede a Roma dopo il 1309, quando il papa va ad Avignone?",
+              "r": "Le famiglie dei baroni si combattono tra loro e la popolazione finisce in miseria."
+            },
+            {
+              "d": "Come fa il papa a riprendere il controllo?",
+              "r": "Con il cardinale Egidio di Albornoz e poi con Martino V, papa dal 1417 che torna a Roma: lo Stato della Chiesa diventa una monarchia del papa."
+            }
+          ]
+        },
+        {
+          "titolo": "Napoli e Sicilia",
+          "dove": "Pagina 380, prima parte",
+          "minuti": 6,
+          "anteprima": "Guarda la miniatura della regina Giovanna d'Angiò: secondo te era facile per una donna governare nel Trecento?",
+          "parole": [
+            "Angioini",
+            "Aragonesi",
+            "congiura"
+          ],
+          "domande": [
+            {
+              "d": "Com'è Napoli con Roberto d'Angiò (1309-1343)?",
+              "r": "Ci sono pace, commerci e arte: qui si forma Boccaccio e lavora Giotto."
+            },
+            {
+              "d": "Cosa succede nel 1442?",
+              "r": "Alfonso V d'Aragona, re di Sicilia, prende Napoli e unisce i due regni."
+            },
+            {
+              "d": "Cosa fanno i baroni nel 1485?",
+              "r": "Organizzano una congiura contro re Ferdinando I. Fallisce, ma il re deve fare concessioni ai baroni."
+            }
+          ]
+        },
+        {
+          "titolo": "La pace di Lodi e Lorenzo il Magnifico",
+          "dove": "Pagine 382, 383 e 384",
+          "minuti": 8,
+          "anteprima": "Confronta la carta di pagina 382 con quella di pagina 374: cosa è cambiato?",
+          "parole": [
+            "pace di Lodi",
+            "Lega italica",
+            "Lorenzo"
+          ],
+          "domande": [
+            {
+              "d": "Perché nel 1454 si firma la pace di Lodi?",
+              "r": "Gli Stati hanno paura dei Turchi, le guerre bloccano i commerci e i banchieri non prestano più denaro."
+            },
+            {
+              "d": "Cosa stabilisce la pace di Lodi?",
+              "r": "Fissa i confini, riconosce Francesco Sforza duca di Milano, dà Bergamo e Brescia a Venezia e crea la Lega italica. L'equilibrio dura circa 50 anni."
+            },
+            {
+              "d": "Perché Lorenzo de' Medici è detto \"ago della bilancia\" e \"il Magnifico\"?",
+              "r": "Mantiene l'equilibrio tra gli Stati, è un politico abilissimo e sostiene le arti. Governa Firenze dal 1469 al 1492."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "tipo": "scelta",
+          "d": "Cosa ottiene un signore che diventa principe?",
+          "opzioni": [
+            "Un titolo ereditario di duca o marchese",
+            "Il voto di tutti i cittadini",
+            "Un esercito pagato dal papa",
+            "La flotta di Venezia"
+          ],
+          "giusta": 0,
+          "pag": "372"
+        },
+        {
+          "tipo": "vf",
+          "d": "Firenze e Venezia diventano Principati.",
+          "giusta": false,
+          "spiega": "Restano Repubbliche.",
+          "pag": "372"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Quale famiglia governa Milano dal 1311?",
+          "opzioni": [
+            "I Medici",
+            "I Visconti",
+            "Gli Este",
+            "I Gonzaga"
+          ],
+          "giusta": 1,
+          "pag": "375"
+        },
+        {
+          "tipo": "vf",
+          "d": "Il doge di Venezia è eletto a vita.",
+          "giusta": true,
+          "spiega": "Lo elegge a vita il Maggior Consiglio.",
+          "pag": "376"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Come governa Firenze Cosimo de' Medici?",
+          "opzioni": [
+            "Come duca nominato dal papa",
+            "Come Signoria di fatto, senza abolire il Comune",
+            "Come doge",
+            "Come re"
+          ],
+          "giusta": 1,
+          "pag": "378"
+        },
+        {
+          "tipo": "vf",
+          "d": "Il Ducato di Savoia nasce da un Comune.",
+          "giusta": false,
+          "spiega": "Nasce dalle terre feudali della famiglia Savoia.",
+          "pag": "378"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Dove si trasferisce il papa nel 1309?",
+          "opzioni": [
+            "Ad Avignone",
+            "A Napoli",
+            "A Firenze",
+            "A Parigi"
+          ],
+          "giusta": 0,
+          "pag": "379"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Chi unisce Napoli e Sicilia nel 1442?",
+          "opzioni": [
+            "Roberto d'Angiò",
+            "Alfonso V d'Aragona",
+            "Francesco Sforza",
+            "Carlo di Durazzo"
+          ],
+          "giusta": 1,
+          "pag": "380"
+        },
+        {
+          "tipo": "scelta",
+          "d": "In che anno si firma la pace di Lodi?",
+          "opzioni": [
+            "1427",
+            "1454",
+            "1478",
+            "1492"
+          ],
+          "giusta": 1,
+          "pag": "382"
+        },
+        {
+          "tipo": "vf",
+          "d": "Lorenzo de' Medici muore nella congiura dei Pazzi.",
+          "giusta": false,
+          "spiega": "Lorenzo è ferito; muore il fratello Giuliano.",
+          "pag": "384"
+        }
+      ]
     }
   ]
 }
