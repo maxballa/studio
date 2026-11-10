@@ -10,7 +10,8 @@
   "verifiche": [
     { "data": "2026-10-27", "ora": 1, "materia": "Aritmetica", "tipo": "Verifica", "cosa": "Unità 7A, le frazioni" },
     { "data": "2026-10-27", "ora": 6, "materia": "Francese", "tipo": "Interrogazione", "cosa": "Dialogo e lessico" },
-    { "data": "2026-11-06", "ora": 1, "materia": "Tecnologia", "tipo": "Verifica", "cosa": "Edifici: strutture, fondazioni, coperture, involucro (pag. 150-158)" }
+    { "data": "2026-11-06", "ora": 1, "materia": "Tecnologia", "tipo": "Verifica", "cosa": "Edifici: strutture, fondazioni, coperture, involucro (pag. 150-158)" },
+    { "data": "2026-11-11", "ora": 5, "materia": "Storia", "tipo": "Verifica", "cosa": "Capitolo 14, Stati regionali (pag. 370-384), 5ª e 6ª ora" }
   ],
   "note": [
     { "data": "2026-10-27", "ora": 1, "materia": "Aritmetica", "testo": "Foglio protocollo per la verifica" },
