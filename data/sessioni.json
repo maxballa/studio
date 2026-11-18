@@ -769,6 +769,235 @@
           "pag": "384"
         }
       ]
+    },
+    {
+      "id": "storia-c14-interrogazione-370-384",
+      "data": "2026-11-19",
+      "materia": "storia",
+      "titolo": "Interrogazione: L'Italia degli Stati regionali",
+      "dove": "Capitolo 14, pagine 370-384 (senza pagina 381)",
+      "pezzi": [
+        {
+          "titolo": "Il Ducato di Savoia",
+          "dove": "Pagina 378, paragrafo \"Tra Italia e Francia nasce il Ducato di Savoia\"",
+          "minuti": 6,
+          "anteprima": "Guarda la cartina \"Dov'è il Ducato di Savoia?\": tra quali due paesi si trova?",
+          "parole": [
+            "Piemonte",
+            "Amedeo VIII",
+            "posizione strategica"
+          ],
+          "domande": [
+            {
+              "d": "Parlami del Ducato di Savoia: dove nasce e perché è diverso dagli altri Stati?",
+              "r": "Nasce tra l'attuale Piemonte e la Francia, dalle terre feudali che la famiglia Savoia aveva dal X secolo, non da un Comune."
+            },
+            {
+              "d": "Cosa succede nel 1416?",
+              "r": "Amedeo VIII di Savoia unisce le terre della famiglia e riceve dall'imperatore il titolo di duca."
+            },
+            {
+              "d": "Perché il ducato conta in Europa e a chi restano legati a lungo i Savoia?",
+              "r": "Per la sua posizione strategica tra l'Italia e la Francia. I Savoia parlano francese e restano legati alla Francia fino al XVIII secolo."
+            }
+          ]
+        },
+        {
+          "titolo": "Dalle Signorie agli Stati regionali",
+          "dove": "Pagine 372, 373 e 374",
+          "minuti": 8,
+          "anteprima": "Guarda la carta dell'Italia a pagina 374: quanti Stati vedi?",
+          "parole": [
+            "Signoria",
+            "Principato",
+            "frammentazione"
+          ],
+          "domande": [
+            {
+              "d": "Parlami di come nasce la Signoria.",
+              "r": "Crisi economica, guerre e lotte interne spingono i Comuni a dare il potere a una sola persona."
+            },
+            {
+              "d": "Che differenza c'è tra Signoria e Principato?",
+              "r": "Nel Principato il signore ha un titolo dal papa o dall'imperatore e lo lascia a un erede."
+            },
+            {
+              "d": "Che conseguenze ha la divisione dell'Italia?",
+              "r": "L'Italia è debole militarmente e cresce poco, perché ogni Stato ha leggi, tasse e dogane diverse."
+            }
+          ]
+        },
+        {
+          "titolo": "Milano, Venezia, Firenze",
+          "dove": "Pagine 375, 376, 377 e inizio di pagina 378",
+          "minuti": 8,
+          "anteprima": "Guarda le carte di Milano e di Venezia: quale delle due città arriva anche sul mare?",
+          "parole": [
+            "Visconti",
+            "doge",
+            "Cosimo de' Medici"
+          ],
+          "domande": [
+            {
+              "d": "Parlami di Milano.",
+              "r": "La governano i Visconti dal 1311. Gian Galeazzo diventa duca nel 1395, poi nel 1450 arriva Francesco Sforza."
+            },
+            {
+              "d": "Come è governata Venezia e perché conquista la terraferma?",
+              "r": "Governa il doge, eletto a vita da poche famiglie ricche. Si allarga sulla terraferma perché gli Ottomani le ostacolano i commerci in mare."
+            },
+            {
+              "d": "Come governa Firenze Cosimo de' Medici?",
+              "r": "Dal 1434 come una Signoria \"di fatto\", senza abolire il Comune. I Medici diventano duchi solo nel 1532."
+            }
+          ]
+        },
+        {
+          "titolo": "Lo Stato della Chiesa e Cola di Rienzo",
+          "dove": "Pagina 379",
+          "minuti": 6,
+          "anteprima": "Leggi le due parole spiegate a lato, Curia e baroni: chi pensi che comandi a Roma?",
+          "parole": [
+            "Avignone",
+            "Cola di Rienzo",
+            "Martino V"
+          ],
+          "domande": [
+            {
+              "d": "Cosa succede a Roma dopo il 1309, quando il papa va ad Avignone?",
+              "r": "Le famiglie dei baroni si combattono tra loro e la popolazione finisce in miseria."
+            },
+            {
+              "d": "Chi è Cola di Rienzo e cosa fa?",
+              "r": "Un notaio di umili origini che nel 1347 prende il potere con una rivolta popolare e frena i baroni; diventa crudele, viene cacciato e nel 1354 la folla lo uccide."
+            },
+            {
+              "d": "Come fa il papa a riprendere il controllo?",
+              "r": "Con il cardinale Egidio di Albornoz e poi con Martino V, che nel 1417 torna a Roma: lo Stato della Chiesa diventa una monarchia del papa."
+            }
+          ]
+        },
+        {
+          "titolo": "Napoli, la pace di Lodi e Lorenzo il Magnifico",
+          "dove": "Pagina 380 (prima parte) e pagine 382, 383 e 384",
+          "minuti": 8,
+          "anteprima": "Confronta la carta di pagina 382 con quella di pagina 374: cosa è cambiato?",
+          "parole": [
+            "Aragonesi",
+            "pace di Lodi",
+            "ago della bilancia"
+          ],
+          "domande": [
+            {
+              "d": "Parlami del Regno di Napoli.",
+              "r": "Con Roberto d'Angiò ci sono pace e arte. Nel 1442 Alfonso V d'Aragona unisce Napoli e Sicilia, nel 1485 i baroni fanno una congiura contro Ferdinando I."
+            },
+            {
+              "d": "Perché si fa la pace di Lodi e cosa stabilisce?",
+              "r": "Nel 1454 gli Stati hanno paura dei Turchi e le guerre bloccano i commerci. La pace fissa i confini, crea la Lega italica e porta un equilibrio di circa 50 anni."
+            },
+            {
+              "d": "Chi è Lorenzo de' Medici?",
+              "r": "Il signore di Firenze dal 1469 al 1492, un politico abile che tiene l'equilibrio tra gli Stati e sostiene le arti. Nel 1478 la congiura dei Pazzi uccide suo fratello Giuliano."
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "tipo": "scelta",
+          "d": "Dove si trova il Ducato di Savoia?",
+          "opzioni": [
+            "Tra il Piemonte e la Francia",
+            "Tra la Toscana e il Lazio",
+            "In Sicilia",
+            "Tra il Veneto e l'Istria"
+          ],
+          "giusta": 0,
+          "pag": "378"
+        },
+        {
+          "tipo": "vf",
+          "d": "Il Ducato di Savoia nasce da un Comune.",
+          "giusta": false,
+          "spiega": "Nasce dalle terre feudali della famiglia Savoia.",
+          "pag": "378"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Chi dà ad Amedeo VIII il titolo di duca nel 1416?",
+          "opzioni": [
+            "Il papa",
+            "L'imperatore",
+            "Il re di Francia",
+            "Il doge"
+          ],
+          "giusta": 1,
+          "pag": "378"
+        },
+        {
+          "tipo": "vf",
+          "d": "Nel Principato il potere passa a un erede.",
+          "giusta": true,
+          "spiega": "Il titolo di principe è ereditario.",
+          "pag": "372"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Chi governa Venezia?",
+          "opzioni": [
+            "Il duca",
+            "Il papa",
+            "Il doge",
+            "Il re"
+          ],
+          "giusta": 2,
+          "pag": "376"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Dove va il papa nel 1309?",
+          "opzioni": [
+            "Ad Avignone",
+            "A Napoli",
+            "A Firenze",
+            "A Parigi"
+          ],
+          "giusta": 0,
+          "pag": "379"
+        },
+        {
+          "tipo": "vf",
+          "d": "Cola di Rienzo era figlio dell'imperatore Enrico VII.",
+          "giusta": false,
+          "spiega": "Era un notaio di umili origini: diceva di esserlo, ma non era vero.",
+          "pag": "379"
+        },
+        {
+          "tipo": "scelta",
+          "d": "Chi unisce Napoli e Sicilia nel 1442?",
+          "opzioni": [
+            "Roberto d'Angiò",
+            "Alfonso V d'Aragona",
+            "Francesco Sforza",
+            "Carlo di Durazzo"
+          ],
+          "giusta": 1,
+          "pag": "380"
+        },
+        {
+          "tipo": "scelta",
+          "d": "In che anno si firma la pace di Lodi?",
+          "opzioni": [
+            "1427",
+            "1454",
+            "1478",
+            "1492"
+          ],
+          "giusta": 1,
+          "pag": "382"
+        }
+      ]
     }
   ]
 }
