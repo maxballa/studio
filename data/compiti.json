@@ -1,17 +1,5 @@
 {
   "compiti": [
-    { "id": "2026-10-26-geometria-studio", "consegna": "2026-10-26", "materia": "Geometria", "tipo": "studio", "testo": "Studiare pag. B202" },
-    { "id": "2026-10-26-geometria-esercizi", "consegna": "2026-10-26", "materia": "Geometria", "tipo": "scritto", "testo": "Esercizi pag. 229, dal n. 1 al n. 5" },
-
-    { "id": "2026-10-27-aritmetica-esercizi", "consegna": "2026-10-27", "materia": "Aritmetica", "tipo": "scritto", "testo": "Esercizi pag. A372, n. 24 e n. 25" },
-    { "id": "2026-10-27-aritmetica-verifica", "consegna": "2026-10-27", "materia": "Aritmetica", "tipo": "studio", "testo": "Ripassare l'unità 7A, le frazioni, per la verifica" },
-    { "id": "2026-10-27-musica-brano", "consegna": "2026-10-27", "materia": "Musica", "tipo": "pratica", "testo": "Ristudiare il brano \"In the mood\" secondo la tua fascia di colore", "nota": "Rossa: tutto. Gialla: tutto tranne l'intro. Verde: solo le note lunghe del riff (Mi, Mi, Fa, Mi, Sol, Do alto). Mi: tutti i fori chiusi tranne gli ultimi due. Fa: tutti chiusi tranne gli ultimi tre. Sol: tutti chiusi tranne gli ultimi quattro. Do alto: chiudere solo il secondo foro dall'alto e il foro posteriore." },
-    { "id": "2026-10-27-approfondimento", "consegna": "2026-10-27", "materia": "Approfondimento", "tipo": "scritto", "testo": "Finire la brutta copia della presentazione di te stessa" },
-    { "id": "2026-10-27-francese-esercizi83", "consegna": "2026-10-27", "materia": "Francese", "tipo": "scritto", "testo": "Es. 3, 4, 5 pag. 83" },
-    { "id": "2026-10-27-francese-lexique", "consegna": "2026-10-27", "materia": "Francese", "tipo": "studio", "testo": "\"Les meubles et les positions\" pag. 84: ascoltare, copiare nella parte di lexique, tradurre e studiare" },
-    { "id": "2026-10-27-francese-quaderno", "consegna": "2026-10-27", "materia": "Francese", "tipo": "scritto", "testo": "Es. 9, 11, 12 sul quaderno" },
-    { "id": "2026-10-27-francese-interrogazione", "consegna": "2026-10-27", "materia": "Francese", "tipo": "studio", "testo": "Studiare dialogo e lessico per l'interrogazione" },
-
     { "id": "2026-10-28-letteratura-studio", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "studio", "testo": "Rivedere la poesia religiosa e San Francesco" },
     { "id": "2026-10-28-letteratura-esercizi", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "scritto", "testo": "Es. da 1 a 11 in fondo al Cantico di frate sole" },
 
@@ -26,6 +14,18 @@
 
     { "id": "2026-11-06-tecnologia-verifica", "consegna": "2026-11-06", "materia": "Tecnologia", "tipo": "studio", "testo": "Verifica: ripassare appunti e libro da pag. 150 a pag. 158", "sessione": "tecnologia-verifica-edilizia-150-158" },
     { "id": "2026-11-11-storia-verifica", "consegna": "2026-11-11", "materia": "Storia", "tipo": "studio", "testo": "Verifica capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Escluse Cola di Rienzo (pag. 379) e il box di educazione civica di pag. 381.", "sessione": "storia-c14-verifica-370-384" },
-    { "id": "2026-11-19-storia-interrogazione", "consegna": "2026-11-19", "materia": "Storia", "tipo": "studio", "testo": "Interrogazione di recupero sul capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Ripassare bene il Ducato di Savoia (pag. 378). Escluso il box di educazione civica di pag. 381.", "sessione": "storia-c14-interrogazione-370-384" }
+    { "id": "2026-11-19-storia-interrogazione", "consegna": "2026-11-19", "materia": "Storia", "tipo": "studio", "testo": "Interrogazione di recupero sul capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Ripassare bene il Ducato di Savoia (pag. 378). Escluso il box di educazione civica di pag. 381.", "sessione": "storia-c14-interrogazione-370-384" },
+
+    { "id": "2026-11-19-arte", "consegna": "2026-11-19", "materia": "Arte", "tipo": "studio", "testo": "Studiare gli appunti sul quaderno e le pag. 130-133" },
+    { "id": "2026-11-19-aritmetica", "consegna": "2026-11-19", "materia": "Aritmetica", "tipo": "scritto", "testo": "Esercizi pag. 407 n. 141 e 145" },
+    { "id": "2026-11-19-scienze", "consegna": "2026-11-19", "materia": "Scienze", "tipo": "scritto", "testo": "Consegnare su Classroom la presentazione sull'elemento chimico assegnato" },
+
+    { "id": "2026-11-20-tecnologia-recupero", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "studio", "testo": "Interrogazione di recupero: strutture portanti, fondazioni, coperture, involucri", "sessione": "tecnologia-verifica-edilizia-150-158" },
+    { "id": "2026-11-20-tecnologia-mappe", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "scritto", "testo": "Preparare le mappe per l'interrogazione di recupero", "nota": "Obbligatorie: una o più mappe sintetiche con parole chiave, da mostrare al prof prima dell'interrogazione." },
+    { "id": "2026-11-20-tecnologia-disegno", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "pratica", "testo": "Finire di costruire prisma e piramide triangolari", "nota": "Portarli a scuola in una scatolina perché non si rompano." },
+    { "id": "2026-11-20-tecnologia-teoria", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare pag. 173 facendo degli schemi sul quaderno" },
+    { "id": "2026-11-20-tecnologia-intervista", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "scritto", "testo": "Intervistare la famiglia sull'impianto idrico sanitario", "nota": "Rispondere sul quaderno alle prime 4 domande del questionario su Classroom." },
+    { "id": "2026-11-20-musica", "consegna": "2026-11-20", "materia": "Musica", "tipo": "scritto", "testo": "Tabella dei significati delle due canzoni e ricerca sui due concept album", "nota": "Le due canzoni ascoltate in classe sono su ClasseViva: ascoltarle e leggerle." },
+    { "id": "2026-11-20-grammatica", "consegna": "2026-11-20", "materia": "Grammatica", "tipo": "scritto", "testo": "Esercizi introduttivi nelle prime pagine del libro di sintassi", "nota": "Come dettato in classe." }
   ]
 }
