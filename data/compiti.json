@@ -1,8 +1,5 @@
 {
   "compiti": [
-    { "id": "2026-10-28-letteratura-studio", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "studio", "testo": "Rivedere la poesia religiosa e San Francesco" },
-    { "id": "2026-10-28-letteratura-esercizi", "consegna": "2026-10-28", "materia": "Letteratura", "tipo": "scritto", "testo": "Es. da 1 a 11 in fondo al Cantico di frate sole" },
-
     { "id": "2026-10-29-arte-capolettera", "consegna": "2026-10-29", "materia": "Arte", "tipo": "scritto", "testo": "Finire di riportare il capolettera sul foglio da disegno" },
     { "id": "2026-10-29-arte-studio", "consegna": "2026-10-29", "materia": "Arte", "tipo": "studio", "testo": "Studiare da pag. 123 a pag. 127" },
     { "id": "2026-10-29-storia", "consegna": "2026-10-29", "materia": "Storia", "tipo": "studio", "testo": "Studiare fino a pag. 377 (capitolo 14, L'Italia degli Stati regionali)", "sessione": "storia-c14-stati-regionali" },
@@ -26,6 +23,21 @@
     { "id": "2026-11-20-tecnologia-teoria", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare pag. 173 facendo degli schemi sul quaderno" },
     { "id": "2026-11-20-tecnologia-intervista", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "scritto", "testo": "Intervistare la famiglia sull'impianto idrico sanitario", "nota": "Rispondere sul quaderno alle prime 4 domande del questionario su Classroom." },
     { "id": "2026-11-20-musica", "consegna": "2026-11-20", "materia": "Musica", "tipo": "scritto", "testo": "Tabella dei significati delle due canzoni e ricerca sui due concept album", "nota": "Le due canzoni ascoltate in classe sono su ClasseViva: ascoltarle e leggerle." },
-    { "id": "2026-11-20-grammatica", "consegna": "2026-11-20", "materia": "Grammatica", "tipo": "scritto", "testo": "Esercizi introduttivi nelle prime pagine del libro di sintassi", "nota": "Come dettato in classe." }
+    { "id": "2026-11-20-grammatica", "consegna": "2026-11-20", "materia": "Grammatica", "tipo": "scritto", "testo": "Esercizi introduttivi nelle prime pagine del libro di sintassi", "nota": "Come dettato in classe." },
+    { "id": "2026-11-23-geometria-esercizi", "consegna": "2026-11-23", "materia": "Geometria", "tipo": "scritto", "testo": "Completare gli esercizi iniziati in classe: pag. 245, 273 e 274 n. 189" },
+    { "id": "2026-11-23-geometria-triangoli", "consegna": "2026-11-23", "materia": "Geometria", "tipo": "studio", "testo": "Ripassare bene le definizioni sui triangoli (pag. 252-253)" },
+
+    { "id": "2026-11-24-aritmetica", "consegna": "2026-11-24", "materia": "Aritmetica", "tipo": "scritto", "testo": "Esercizi pag. 412 n. 203-204 e pag. 414 n. 224-225" },
+    { "id": "2026-11-24-musica-letitbe", "consegna": "2026-11-24", "materia": "Musica", "tipo": "pratica", "testo": "Studiare bene tutto il brano di Let it be", "nota": "Per la gara musicale tra gruppi: la prof consiglia di trovarsi il pomeriggio in gruppi separati di flauti e tastiere." },
+    { "id": "2026-11-24-approfondimento-diario", "consegna": "2026-11-24", "materia": "Approfondimento", "tipo": "scritto", "testo": "Concludere il testo del Diario \"Il giorno/momento più bello della mia vita\"" },
+    { "id": "2026-11-24-francese-verifica", "consegna": "2026-11-24", "materia": "Francese", "tipo": "studio", "testo": "Verifica scritta sull'unità 5: lessico, comunicazione, grammatica, verbi, comprensione", "nota": "Sul registro è segnata come Educazione civica, ma è di francese." },
+
+    { "id": "2026-11-25-scienze", "consegna": "2026-11-25", "materia": "Scienze", "tipo": "studio", "testo": "Studiare da pag. 19 a pag. 21 (i legami chimici)" },
+    { "id": "2026-11-25-antologia-brano", "consegna": "2026-11-25", "materia": "Antologia", "tipo": "scritto", "testo": "Leggere il brano di pag. 337-339 e rispondere alle domande da 1 a 13" },
+    { "id": "2026-11-25-antologia-esercizi", "consegna": "2026-11-25", "materia": "Antologia", "tipo": "scritto", "testo": "Esercizi di pag. 698 e 699" },
+    { "id": "2026-11-25-storia-interrogazione", "consegna": "2026-11-25", "materia": "Storia", "tipo": "studio", "testo": "Prepararsi all'interrogazione sull'ultimo capitolo", "nota": "Mercoledì interroga chi non partecipa ai Giochi di Prisma, giovedì 26 finisce le interrogazioni." },
+
+    { "id": "2026-11-26-arte-studio", "consegna": "2026-11-26", "materia": "Arte", "tipo": "studio", "testo": "Studiare pag. 133 e 139 sul quaderno di arte" },
+    { "id": "2026-11-26-arte-animali", "consegna": "2026-11-26", "materia": "Arte", "tipo": "scritto", "testo": "Linguaggio visivo: scegliere 4 animali e motivare le scelte", "nota": "Uno per com'eri da piccola, uno per come ti vedi ora, uno per come vorresti vederti in futuro, uno per come pensi ti vedano gli altri. Cercare e portare le immagini per creare il proprio animale." }
   ]
 }
