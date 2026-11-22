@@ -24,6 +24,7 @@
     { "id": "2026-11-20-tecnologia-intervista", "consegna": "2026-11-20", "materia": "Tecnologia", "tipo": "scritto", "testo": "Intervistare la famiglia sull'impianto idrico sanitario", "nota": "Rispondere sul quaderno alle prime 4 domande del questionario su Classroom." },
     { "id": "2026-11-20-musica", "consegna": "2026-11-20", "materia": "Musica", "tipo": "scritto", "testo": "Tabella dei significati delle due canzoni e ricerca sui due concept album", "nota": "Le due canzoni ascoltate in classe sono su ClasseViva: ascoltarle e leggerle." },
     { "id": "2026-11-20-grammatica", "consegna": "2026-11-20", "materia": "Grammatica", "tipo": "scritto", "testo": "Esercizi introduttivi nelle prime pagine del libro di sintassi", "nota": "Come dettato in classe." },
+    { "id": "2026-11-23-storia-interrogazione", "consegna": "2026-11-23", "materia": "Storia", "tipo": "studio", "testo": "Interrogazione di recupero sul capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Spostata da giovedì 19. Ripassare bene il Ducato di Savoia (pag. 378). Escluso il box di educazione civica di pag. 381.", "sessione": "storia-c14-interrogazione-23nov" },
     { "id": "2026-11-23-geometria-esercizi", "consegna": "2026-11-23", "materia": "Geometria", "tipo": "scritto", "testo": "Completare gli esercizi iniziati in classe: pag. 245, 273 e 274 n. 189" },
     { "id": "2026-11-23-geometria-triangoli", "consegna": "2026-11-23", "materia": "Geometria", "tipo": "studio", "testo": "Ripassare bene le definizioni sui triangoli (pag. 252-253)" },
 
