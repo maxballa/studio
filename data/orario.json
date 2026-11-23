@@ -15,7 +15,9 @@
     { "data": "2026-11-20", "ora": 1, "materia": "Tecnologia", "tipo": "Interrogazione", "cosa": "Recupero: strutture portanti, fondazioni, coperture, involucri (con le mappe)" },
     { "data": "2026-11-23", "ora": 3, "materia": "Storia", "tipo": "Interrogazione", "cosa": "Recupero sul capitolo 14, Stati regionali (pag. 370-384), spostata da giovedì 19, 3ª e 4ª ora" },
     { "data": "2026-11-24", "ora": 6, "materia": "Francese", "tipo": "Verifica", "cosa": "Unità 5: lessico, comunicazione, grammatica, verbi, comprensione" },
-    { "data": "2026-11-26", "ora": 3, "materia": "Storia", "tipo": "Interrogazione", "cosa": "Ultimo capitolo del volume di prima (si comincia mercoledì 25 con chi non fa i Giochi di Prisma)" }
+    { "data": "2026-11-26", "ora": 3, "materia": "Storia", "tipo": "Interrogazione", "cosa": "Ultimo capitolo del volume di prima (si comincia mercoledì 25 con chi non fa i Giochi di Prisma)" },
+    { "data": "2026-11-27", "ora": 5, "materia": "Grammatica", "tipo": "Verifica", "cosa": "Verbi passivi" },
+    { "data": "2026-12-02", "ora": 2, "materia": "Scienze", "tipo": "Verifica", "cosa": "Unità 1, dall'atomo ai legami chimici" }
   ],
   "note": [
     { "data": "2026-10-27", "ora": 1, "materia": "Aritmetica", "testo": "Foglio protocollo per la verifica" },
@@ -23,6 +25,8 @@
     { "data": "2026-11-20", "ora": 1, "materia": "Tecnologia", "testo": "Prisma e piramide in una scatolina, mappe per l'interrogazione" },
     { "data": "2026-11-20", "ora": 5, "materia": "Grammatica", "testo": "Libro di sintassi" },
     { "data": "2026-11-23", "ora": 3, "materia": "Storia", "testo": "Volume di seconda con nome e cognome scritti, e gli appunti" },
-    { "data": "2026-11-26", "ora": 1, "materia": "Arte", "testo": "Immagini per creare il proprio animale" }
+    { "data": "2026-11-26", "ora": 1, "materia": "Arte", "testo": "Immagini per creare il proprio animale" },
+    { "data": "2026-11-27", "ora": 1, "materia": "Tecnologia", "testo": "Prisma e piramide a base esagonale, protetti perché non si rompano" },
+    { "data": "2026-11-27", "ora": 4, "materia": "Musica", "testo": "Poesia letta in classe, stampata" }
   ]
 }

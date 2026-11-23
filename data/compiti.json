@@ -1,14 +1,5 @@
 {
   "compiti": [
-    { "id": "2026-10-29-arte-capolettera", "consegna": "2026-10-29", "materia": "Arte", "tipo": "scritto", "testo": "Finire di riportare il capolettera sul foglio da disegno" },
-    { "id": "2026-10-29-arte-studio", "consegna": "2026-10-29", "materia": "Arte", "tipo": "studio", "testo": "Studiare da pag. 123 a pag. 127" },
-    { "id": "2026-10-29-storia", "consegna": "2026-10-29", "materia": "Storia", "tipo": "studio", "testo": "Studiare fino a pag. 377 (capitolo 14, L'Italia degli Stati regionali)", "sessione": "storia-c14-stati-regionali" },
-
-    { "id": "2026-10-30-tecnologia-cubo", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "scritto", "testo": "Se non l'hai finito in classe: sviluppo del cubo su foglio da disegno, poi tagliare e montare", "nota": "Seguire la prima slide su Classroom (materiale: papertoy). Non decorare." },
-    { "id": "2026-10-30-tecnologia-teoria", "consegna": "2026-10-30", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare da pag. 153 a pag. 158 e gli appunti", "sessione": "tecnologia-edilizia-153-158" },
-    { "id": "2026-10-30-musica-thewall", "consegna": "2026-10-30", "materia": "Musica", "tipo": "scritto", "testo": "The Wall: traduzione e riflessioni su \"Hey you\", \"Another brick in the wall\" e il finale di \"The trial\"", "nota": "Ascoltare su YouTube, scrivere la traduzione sul pentagramma e cosa significa il testo. Alla fine: cosa significa l'album e cosa significano oggi queste canzoni per te." },
-    { "id": "2026-10-30-grammatica", "consegna": "2026-10-30", "materia": "Grammatica", "tipo": "scritto", "testo": "Preposizioni articolate: copiare la tabella di pag. 408 e fare gli esercizi", "nota": "Es. 1, 2, 3 pag. 407; es. 11 pag. 411; tutti gli es. di pag. 412; es. 2, 3 pag. 417; tutti gli es. di pag. 420." },
-
     { "id": "2026-11-06-tecnologia-verifica", "consegna": "2026-11-06", "materia": "Tecnologia", "tipo": "studio", "testo": "Verifica: ripassare appunti e libro da pag. 150 a pag. 158", "sessione": "tecnologia-verifica-edilizia-150-158" },
     { "id": "2026-11-11-storia-verifica", "consegna": "2026-11-11", "materia": "Storia", "tipo": "studio", "testo": "Verifica capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Escluse Cola di Rienzo (pag. 379) e il box di educazione civica di pag. 381.", "sessione": "storia-c14-verifica-370-384" },
     { "id": "2026-11-19-storia-interrogazione", "consegna": "2026-11-19", "materia": "Storia", "tipo": "studio", "testo": "Interrogazione di recupero sul capitolo 14, L'Italia degli Stati regionali (pag. 370-384)", "nota": "Ripassare bene il Ducato di Savoia (pag. 378). Escluso il box di educazione civica di pag. 381.", "sessione": "storia-c14-interrogazione-370-384" },
@@ -39,6 +30,19 @@
     { "id": "2026-11-25-storia-interrogazione", "consegna": "2026-11-25", "materia": "Storia", "tipo": "studio", "testo": "Prepararsi all'interrogazione sull'ultimo capitolo", "nota": "Mercoledì interroga chi non partecipa ai Giochi di Prisma, giovedì 26 finisce le interrogazioni." },
 
     { "id": "2026-11-26-arte-studio", "consegna": "2026-11-26", "materia": "Arte", "tipo": "studio", "testo": "Studiare pag. 133 e 139 sul quaderno di arte" },
-    { "id": "2026-11-26-arte-animali", "consegna": "2026-11-26", "materia": "Arte", "tipo": "scritto", "testo": "Linguaggio visivo: scegliere 4 animali e motivare le scelte", "nota": "Uno per com'eri da piccola, uno per come ti vedi ora, uno per come vorresti vederti in futuro, uno per come pensi ti vedano gli altri. Cercare e portare le immagini per creare il proprio animale." }
+    { "id": "2026-11-26-arte-animali", "consegna": "2026-11-26", "materia": "Arte", "tipo": "scritto", "testo": "Linguaggio visivo: scegliere 4 animali e motivare le scelte", "nota": "Uno per com'eri da piccola, uno per come ti vedi ora, uno per come vorresti vederti in futuro, uno per come pensi ti vedano gli altri. Cercare e portare le immagini per creare il proprio animale." },
+
+    { "id": "2026-11-27-tecnologia-solidi", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "pratica", "testo": "Finire prisma e piramide a base esagonale iniziati in classe", "nota": "Portarli a scuola in modo che non si rompano." },
+    { "id": "2026-11-27-tecnologia-pentagono", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "studio", "testo": "Ripassare la procedura per disegnare il pentagono" },
+    { "id": "2026-11-27-tecnologia-riscaldamento", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "studio", "testo": "Studiare l'impianto di riscaldamento a pag. 174" },
+    { "id": "2026-11-27-tecnologia-questionario", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "scritto", "testo": "Rispondere alle domande del questionario dalla 5 alla 10" },
+    { "id": "2026-11-27-francese-dialogo", "consegna": "2026-11-27", "materia": "Francese", "tipo": "scritto", "testo": "Dialogo di pag. 94: ascoltarlo più volte, copiare e tradurre la prima parte" },
+    { "id": "2026-11-27-francese-esercizi", "consegna": "2026-11-27", "materia": "Francese", "tipo": "scritto", "testo": "Esercizi pag. 95 n. 2 e pag. 177 n. 1" },
+    { "id": "2026-11-27-grammatica-esercizi", "consegna": "2026-11-27", "materia": "Grammatica", "tipo": "scritto", "testo": "Sul volume di sintassi fare tutti gli esercizi di pag. 15 e 16" },
+    { "id": "2026-11-27-grammatica-verifica", "consegna": "2026-11-27", "materia": "Grammatica", "tipo": "studio", "testo": "Verifica sui verbi passivi: studiare i verbi passivi" },
+    { "id": "2026-11-27-musica-morricone", "consegna": "2026-11-27", "materia": "Musica", "tipo": "scritto", "testo": "Guardare su Classroom il brano di Morricone e scrivere esattamente com'è fatto" },
+    { "id": "2026-11-27-musica-poesia", "consegna": "2026-11-27", "materia": "Musica", "tipo": "pratica", "testo": "Stampare la poesia letta in classe" },
+
+    { "id": "2026-12-02-scienze-verifica", "consegna": "2026-12-02", "materia": "Scienze", "tipo": "studio", "testo": "Verifica di scienze sull'unità 1, dall'atomo ai legami chimici" }
   ]
 }
