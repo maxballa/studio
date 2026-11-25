@@ -28,9 +28,12 @@
     { "id": "2026-11-25-antologia-brano", "consegna": "2026-11-25", "materia": "Antologia", "tipo": "scritto", "testo": "Leggere il brano di pag. 337-339 e rispondere alle domande da 1 a 13" },
     { "id": "2026-11-25-antologia-esercizi", "consegna": "2026-11-25", "materia": "Antologia", "tipo": "scritto", "testo": "Esercizi di pag. 698 e 699" },
     { "id": "2026-11-25-storia-interrogazione", "consegna": "2026-11-25", "materia": "Storia", "tipo": "studio", "testo": "Prepararsi all'interrogazione sull'ultimo capitolo", "nota": "Mercoledì interroga chi non partecipa ai Giochi di Prisma, giovedì 26 finisce le interrogazioni." },
+    { "id": "2026-11-25-geometria-studio", "consegna": "2026-11-25", "materia": "Geometria", "tipo": "studio", "testo": "Studiare pag. 246" },
+    { "id": "2026-11-25-geometria-esercizi", "consegna": "2026-11-25", "materia": "Geometria", "tipo": "scritto", "testo": "Esercizio pag. 278 n. 217 ed esercizi di riepilogo pag. 281-282 dal n. 1 al n. 11" },
 
     { "id": "2026-11-26-arte-studio", "consegna": "2026-11-26", "materia": "Arte", "tipo": "studio", "testo": "Studiare pag. 133 e 139 sul quaderno di arte" },
     { "id": "2026-11-26-arte-animali", "consegna": "2026-11-26", "materia": "Arte", "tipo": "scritto", "testo": "Linguaggio visivo: scegliere 4 animali e motivare le scelte", "nota": "Uno per com'eri da piccola, uno per come ti vedi ora, uno per come vorresti vederti in futuro, uno per come pensi ti vedano gli altri. Cercare e portare le immagini per creare il proprio animale." },
+    { "id": "2026-11-26-aritmetica", "consegna": "2026-11-26", "materia": "Aritmetica", "tipo": "scritto", "testo": "Esercizi pag. 414 n. 229 e 230, pag. 416 n. 266 e 267" },
 
     { "id": "2026-11-27-tecnologia-solidi", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "pratica", "testo": "Finire prisma e piramide a base esagonale iniziati in classe", "nota": "Portarli a scuola in modo che non si rompano." },
     { "id": "2026-11-27-tecnologia-pentagono", "consegna": "2026-11-27", "materia": "Tecnologia", "tipo": "studio", "testo": "Ripassare la procedura per disegnare il pentagono" },
@@ -42,6 +45,16 @@
     { "id": "2026-11-27-grammatica-verifica", "consegna": "2026-11-27", "materia": "Grammatica", "tipo": "studio", "testo": "Verifica sui verbi passivi: studiare i verbi passivi" },
     { "id": "2026-11-27-musica-morricone", "consegna": "2026-11-27", "materia": "Musica", "tipo": "scritto", "testo": "Guardare su Classroom il brano di Morricone e scrivere esattamente com'è fatto" },
     { "id": "2026-11-27-musica-poesia", "consegna": "2026-11-27", "materia": "Musica", "tipo": "pratica", "testo": "Stampare la poesia letta in classe" },
+    { "id": "2026-11-27-francese-verifica", "consegna": "2026-11-27", "materia": "Francese", "tipo": "studio", "testo": "Verifica scritta sull'unità 5: lessico, comunicazione, grammatica, verbi, comprensione", "nota": "Sul registro ora è segnata venerdì 27 e non più martedì 24." },
+
+    { "id": "2026-11-30-geografia-spagna", "consegna": "2026-11-30", "materia": "Geografia", "tipo": "scritto", "testo": "Completare il lavoro sulla Spagna" },
+    { "id": "2026-11-30-geografia-stati", "consegna": "2026-11-30", "materia": "Geografia", "tipo": "scritto", "testo": "Carta d'identità e bandiera di Andorra e del Portogallo", "nota": "Portare il quaderno con gli Stati." },
+    { "id": "2026-11-30-geometria", "consegna": "2026-11-30", "materia": "Geometria", "tipo": "scritto", "testo": "Problemi sul quaderno: pag. 270 n. 153, pag. 268 n. 134 e 135, pag. 262 n. 69" },
+
+    { "id": "2026-12-01-musica-letitbe", "consegna": "2026-12-01", "materia": "Musica", "tipo": "pratica", "testo": "Ristudiare meglio il brano a 2 voci di Let it be" },
+    { "id": "2026-12-01-musica-moonriver", "consegna": "2026-12-01", "materia": "Musica", "tipo": "pratica", "testo": "Studiare ritmo e melodia del brano nuovo, Moon River" },
+    { "id": "2026-12-01-francese-dialogo", "consegna": "2026-12-01", "materia": "Francese", "tipo": "scritto", "testo": "Dialogo di pag. 94: ascoltarlo più volte, copiare e tradurre la prima parte", "nota": "Sul quaderno, nella parte degli esercizi (exercices), con il foglio diviso a metà." },
+    { "id": "2026-12-01-francese-esercizi", "consegna": "2026-12-01", "materia": "Francese", "tipo": "scritto", "testo": "Esercizi pag. 95 n. 2 e pag. 177 n. 1" },
 
     { "id": "2026-12-02-scienze-verifica", "consegna": "2026-12-02", "materia": "Scienze", "tipo": "studio", "testo": "Verifica di scienze sull'unità 1, dall'atomo ai legami chimici" }
   ]
