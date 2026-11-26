@@ -56,6 +56,10 @@
     { "id": "2026-12-01-francese-dialogo", "consegna": "2026-12-01", "materia": "Francese", "tipo": "scritto", "testo": "Dialogo di pag. 94: ascoltarlo più volte, copiare e tradurre la prima parte", "nota": "Sul quaderno, nella parte degli esercizi (exercices), con il foglio diviso a metà." },
     { "id": "2026-12-01-francese-esercizi", "consegna": "2026-12-01", "materia": "Francese", "tipo": "scritto", "testo": "Esercizi pag. 95 n. 2 e pag. 177 n. 1" },
 
-    { "id": "2026-12-02-scienze-verifica", "consegna": "2026-12-02", "materia": "Scienze", "tipo": "studio", "testo": "Verifica di scienze sull'unità 1, dall'atomo ai legami chimici" }
+    { "id": "2026-12-02-scienze-verifica", "consegna": "2026-12-02", "materia": "Scienze", "tipo": "studio", "testo": "Verifica di scienze sull'unità 1, dall'atomo ai legami chimici" },
+
+    { "id": "2026-12-03-arte-verifica", "consegna": "2026-12-03", "materia": "Arte", "tipo": "studio", "testo": "Verifica di storia dell'arte: paleocristiano, bizantino, romanico", "nota": "Paleocristiano: pag. 102 primi due paragrafi e i simboli (documento su Classroom), soprattutto acrostico e monogramma, pavone, pellicano, colomba. Bizantino: riconoscere dentro e fuori Mausoleo di Galla Placidia, Sant'Apollinare, San Vitale; spiegare perché fuori sono povere e dentro ricche, perché tutto diventa bidimensionale, la differenza tra il mausoleo e le due basiliche. Romanico: pag. 124 tutta, 126 (la 125 aiuta a capire); riconoscere dentro e fuori Sant'Ambrogio a Milano, San Geminiano a Modena, San Marco a Venezia; a cosa servono le figure; descrivere e confrontare Adamo ed Eva di Wiligelmo e la Deposizione di Antelami." },
+    { "id": "2026-12-03-arte-disegni", "consegna": "2026-12-03", "materia": "Arte", "tipo": "pratica", "testo": "Esercitarsi a disegnare basilica paleocristiana e cattedrale romanica con i nomi delle parti", "nota": "Anche le tipologie di facciata romanica, come sul quaderno." },
+    { "id": "2026-12-03-storia-studio", "consegna": "2026-12-03", "materia": "Storia", "tipo": "studio", "testo": "Studiare fino a pag. 14 del volume di seconda", "nota": "Portare solo ed esclusivamente il volume di seconda." }
   ]
 }
